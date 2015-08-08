@@ -1,6 +1,8 @@
 <?php
 /*
 Template Name: Page Devotion
+coba
+coba lgau
 */
 get_header(); ?>
 	<div id="content" class="content-area col-sm-12 col-md-12">
