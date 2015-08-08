@@ -4,6 +4,7 @@
  * up for a new blog matches the key for that user and then displays confirmation.
  *
  * @package WordPress
+ Editan pertama
  */
 
 define( 'WP_INSTALLING', true );
