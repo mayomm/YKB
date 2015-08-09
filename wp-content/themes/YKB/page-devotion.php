@@ -10,30 +10,39 @@ get_header(); ?>
 		  <div class="row">
 			<div class="col-sm-4 col-md-3 sidebar margin-devotion-sidebar">
 			  <ul class="nav nav-sidebar">
-				<li>Overview</li>
-				<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/1.jpg" width="40px" height="40px" class="img-circle img-navbar"><small> Renungan Keluarga </small></a></li>
-				<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/1.jpg" width="40px" height="40px" class="img-circle img-navbar"><small> Renungan Pemuda </small></a></li>
-				<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/1.jpg" width="40px" height="40px" class="img-circle img-navbar"><small> Renungan Anak </small></a></li>
-				<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/1.jpg" width="40px" height="40px" class="img-circle img-navbar"><small> Renungan Umur </small></a></li>
-				<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/1.jpg" width="40px" height="40px" class="img-circle img-navbar"><small> Renungan Remaja </small></a></li>
-				<li><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/1.jpg" width="40px" height="40px" class="img-circle img-navbar"><small> Renungan Lansia </small></a></li>
+				<li class="sidebar-font-top"><span>DEVOTION</span></li>
+				<li class="sidebar-background"><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/1.jpg" width="40px" height="40px" class="img-circle img-navbar"><small> Renungan Keluarga </small></a></li>
+				<li class="sidebar-background"><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/1.jpg" width="40px" height="40px" class="img-circle img-navbar"><small> Renungan Pemuda </small></a></li>
+				<li class="sidebar-background"><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/1.jpg" width="40px" height="40px" class="img-circle img-navbar"><small> Renungan Anak </small></a></li>
+				<li class="sidebar-background"><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/1.jpg" width="40px" height="40px" class="img-circle img-navbar"><small> Renungan Umur </small></a></li>
+				<li class="sidebar-background"><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/1.jpg" width="40px" height="40px" class="img-circle img-navbar"><small> Renungan Remaja </small></a></li>
+				<li class="sidebar-background"><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/1.jpg" width="40px" height="40px" class="img-circle img-navbar"><small> Renungan Lansia </small></a></li>
 			  </ul>
 		  </div>
-			<div class="col-md-7 main">
-				<div id="img-content-top">
-					<img src="<?php bloginfo('template_url'); ?>/images/footer/bromo1.jpg" class="img-devotion-main">
-				</div>
-				<div class="background-color-1 row">
-					<div class="col-md-12 ">
-						<div class="col-md-2 background-color-a">
-							<h1>12 juni</h1>
+			<div class="col-md-7 main content-devotion-background ">
+				<div class="devotion-content">
+					<div id="img-content-top"class="col-md-14 img-devotion-content-top">
+						<img src="<?php bloginfo('template_url'); ?>/images/footer/bromo1.jpg" class="img-devotion-main">
+					</div>
+					<div class="devotion-content-top">
+						<div class="row">
+							<div class="">
+								<div class="col-md-2 background-color-a">
+									<h1>12 juni</h1>
+								</div>
+								<div class="col-md-9 col-sm-10 title-devotion-main">
+								<h4 >SAMURAI SEJATI TIDAK TAKUT MATI (IBRANI 11:4-7)</h4>
+								</div>
+							</div>
 						</div>
-						<h1>SAMURAI SEJATI TIDAK TAKUT MATI</h1>
+						<div id="img-content-top">
+							<img src="<?php bloginfo('template_url'); ?>/images/footer/bromo1.jpg">
+						</div>
 					</div>
 				</div>
-				<div id="img-content-top">
-					<img src="<?php bloginfo('template_url'); ?>/images/footer/bromo1.jpg" >
-				</div>
+			</div>
+			<div class="col-md-2 col-sm-4 ">
+				<?php dynamic_sidebar( 'rightdevotion' ); ?>
 			</div>
 		</div>
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>

@@ -71,7 +71,6 @@ STYLING
 **************************************/
 
 nav {
-	display: block;
 	padding: 0;
 	margin: 0;
 }
@@ -88,7 +87,7 @@ a:hover, a:active {
 
 
 .container {
-    background: #fff;
+    background: #d9d9d9;
     border: 1px solid #ccc;
     border-bottom: none;
     margin-top: 20px;
@@ -606,8 +605,10 @@ code {
 }
 /*sdfsdfasdfsafasfsafas*/
 .sidebar li {
-	padding:0px 0 0px 0px;
+	padding:0 0 0 0;
+	border-bottom: 1px solid #000000;
 }
+
 /*sdfsdfasdfsafasfsafas*/
 .sidebar li a {
 	line-height: 0px;
@@ -980,8 +981,8 @@ font-size:60px;
     padding: 10px;
     overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-    background-color: #f5f5f5;
-    border: 1px solid #000000;
+	background-color:#888;
+	border: 1px solid #000000;
   }
 }
 
@@ -1014,7 +1015,37 @@ font-size:60px;
 	margin-left:20px;
 }
 .img-devotion-main{
-	height:100px;
+	height:80px;
 	width:100%;
+}
+
+.title-devotion-main{
+	margin-top:30px;
+	margin-left:30px;
+	text-align:center;
+}
+.img-devotion-content-top{
+	margin-left:-15px;
+	margin-right:-15px;
+}
+.devotion-content-top{
+	margin-left:10px;
+	margin-right:10px;
+}
+.devotion-content-top img{
+	height:300px;
+	width:100%;
+}
+.devotion-content{
+	margin-bottom: 30px;
+}
+.content-devotion-background{
+	background: #ffffff;
+}
+.sidebar-font-top{
+	text-align: center;
+}
+.sidebar-background{
+	background-color: #d9d9d9;
 }
 /*devtion end*/

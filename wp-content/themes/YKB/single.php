@@ -14,7 +14,7 @@
 
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<?php $romangie_countComments = wp_count_comments(get_the_ID()); ?>
-					<div id="post-<?php the_ID(); ?>" <?php post_class('row post-roll'); ?>>
+					<div id="post-<?php the_ID(); ?> mayo" <?php post_class('row post-roll'); ?>>
 						<div class="col-sm-3 meta info hidden-xs">
 							
 							<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php printf( __('Permalink to %s', 'romangie'), get_the_title()); ?>">
