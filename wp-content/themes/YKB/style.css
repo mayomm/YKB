@@ -1049,3 +1049,69 @@ font-size:60px;
 	background-color: #d9d9d9;
 }
 /*devtion end*/
+/*event & news start*/
+.sidebaren h4 ,.sidebaren label, .sidebaren caption, .comments-title {
+	color: #444;
+	font-size: 18px;
+	margin-bottom: 10px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.sidebaren li {
+	padding:0 0 0 0;
+	border-bottom: 1px solid #000000;
+}
+
+.sidebaren li a {
+	line-height: 15px;
+	background:white;
+}
+
+.sidebaren input[type="text"] {
+	width: 100%;
+}
+
+.sidebaren {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebaren{
+    top: 0;
+    bottom: 0;
+    left: 0;
+	width:200px;
+    z-index: 1000;
+    display: block;
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+	background-color:#888;
+	border: 1px solid #000000;
+	text-align:center;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebaren {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: -10px;
+  margin-left: -20px;
+}
+.nav-sidebaren  > li > a  {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebaren > .active > a,
+.nav-sidebaren > .active > a:hover,
+.nav-sidebaren > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+.sidebaren h4  {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/*event & news end*/
