@@ -13,25 +13,94 @@ get_header(); ?>
 				<li class="sidebar-background"><a href="#"> NEWS </a></li>
 			  </ul>
 			</div>
-			<div class="col-md-9 main content-devotion-background ">
-				<div class="devotion-content">
-					<div class="devotion-content-top">
-						<div>
+			<div class="row">
+				<div class="col-sm-7 col-md-9 main content-devotion-background">
+					<div class="col-md-12 col-sm-11">
+						<div class="title-main-box-en">
 							<h4>EVENT</h4>
 						</div>
-						<div class="row">
-							<div class="">
-								<div class="col-md-2 background-color-a">
-									<h1>12 juni</h1>
+						<div id="style-4" class=" main-scroll ">
+							<div class="main-inbox-en">
+								<div class="col-md-12 ">
+								<div class="row main-inbox-in-en ">
+									<div class="col-md-4">
+										<img src="<?php bloginfo('template_url'); ?>/images/footer/bromo1.jpg" class="main-img-size" height="10px">
+									</div>
+									<div class="col-md-8">
+										<h5>19 MEI 2015 - CONGRESS PASSES THE GIRL COUNT ACT<h5>
+										<p> I often find myselft thinking back to the years when my children were young.One particular 
+										found memory is our morning wake-up routin. Every morning i'd go into their bedrooms...
+										</p>
+									</div>
 								</div>
-								<div class="col-md-9 col-sm-10 title-devotion-main">
-								<h4 >SAMURAI SEJATI TIDAK TAKUT MATI (IBRANI 11:4-7)</h4>
+								</div>
+							</div>
+							<div class="main-inbox-en">
+								<div class="col-md-12 ">
+								<div class="row main-inbox-in-en ">
+									<div class="col-md-4">
+										<img src="<?php bloginfo('template_url'); ?>/images/footer/bromo1.jpg" class="main-img-size" height="10px">
+									</div>
+									<div class="col-md-8">
+										<h5>19 MEI 2015 - CONGRESS PASSES THE GIRL COUNT ACT<h5>
+										<p> I often find myselft thinking back to the years when my children were young.One particular 
+										found memory is our morning wake-up routin. Every morning i'd go into their bedrooms...
+										</p>
+									</div>
+								</div>
+								</div>
+							</div>
+							<div class="main-inbox-en">
+								<div class="col-md-12 ">
+								<div class="row main-inbox-in-en ">
+									<div class="col-md-4">
+										<img src="<?php bloginfo('template_url'); ?>/images/footer/bromo1.jpg" class="main-img-size" height="10px">
+									</div>
+									<div class="col-md-8">
+										<h5>19 MEI 2015 - CONGRESS PASSES THE GIRL COUNT ACT<h5>
+										<p> I often find myselft thinking back to the years when my children were young.One particular 
+										found memory is our morning wake-up routin. Every morning i'd go into their bedrooms...
+										</p>
+									</div>
+								</div>
+								</div>
+							</div>
+							<div class="main-inbox-en">
+								<div class="col-md-12 ">
+								<div class="row main-inbox-in-en ">
+									<div class="col-md-4">
+										<img src="<?php bloginfo('template_url'); ?>/images/footer/bromo1.jpg" class="main-img-size" height="10px">
+									</div>
+									<div class="col-md-8">
+										<h5>19 MEI 2015 - CONGRESS PASSES THE GIRL COUNT ACT<h5>
+										<p> I often find myselft thinking back to the years when my children were young.One particular 
+										found memory is our morning wake-up routin. Every morning i'd go into their bedrooms...
+										</p>
+									</div>
+								</div>
+								</div>
+							</div>
+							<div class="main-inbox-en">
+								<div class="col-md-12 ">
+								<div class="row main-inbox-in-en ">
+									<div class="col-md-4">
+										<img src="<?php bloginfo('template_url'); ?>/images/footer/bromo1.jpg" class="main-img-size" height="10px">
+									</div>
+									<div class="col-md-8">
+										<h5>19 MEI 2015 - CONGRESS PASSES THE GIRL COUNT ACT<h5>
+										<p> I often find myselft thinking back to the years when my children were young.One particular 
+										found memory is our morning wake-up routin. Every morning i'd go into their bedrooms...
+										</p>
+									</div>
+								</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				</div>
 			</div>
+		</div>
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<div class="row content">
 

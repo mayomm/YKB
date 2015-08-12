@@ -22,13 +22,19 @@
 			get_stylesheet_directory_uri() . '/js/holder.min.js',
 			array( 'jquery' )
 		);
+		
+		wp_enqueue_script(
+			'romangie-scrollbar',
+			get_stylesheet_directory_uri() . '/js/scrollbar.js',
+			array( 'jquery' )
+		);
 
 		wp_enqueue_style(
 			'romangie-style',
 			get_stylesheet_directory_uri() . '/style.css',
 			array( 'romangie-bootstrap' , 'romangie-bootstrap-theme' )
 		);
-
+		
 		wp_enqueue_script( 'comment-reply' );
 		
 		wp_enqueue_style( 

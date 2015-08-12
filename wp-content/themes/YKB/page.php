@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	<div id="content" class="content-area col-sm-12 col-md-12">
+	<div id="content" class=" content-area col-sm-12 col-md-12">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<div id="post-<?php the_ID(); ?>" <?php post_class('row post-roll'); ?>>
 				<div class="col-md-2"><?php edit_post_link(__('Edit this page.', 'romangie'), '<p>', '</p>'); ?></div>

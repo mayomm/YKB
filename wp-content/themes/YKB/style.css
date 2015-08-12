@@ -206,7 +206,7 @@ a:hover, a:active {
 /** General Styling of Elements */
 
 .indexpage .post-roll {
-	margin-bottom: 80px;
+	margin-bottom: 30px;
 }
 
 .page-title {
@@ -288,7 +288,7 @@ a:hover, a:active {
 }
 
 .entry p, .comment-content p, .entry blockquote, .comment-content blockquote {
-    margin: 0 0 22px;
+    margin: 10px 0 10px;
 }
 
 .entry embed, .entry iframe, .mejs-container {
@@ -313,7 +313,7 @@ img.wp-post-image {
 .gallery-caption {
 
 }
-
+/*
 .size-auto, 
 .size-full,
 .size-large,
@@ -322,7 +322,7 @@ img.wp-post-image {
     max-width: 100%;
     height: auto;
 }
-
+*/
 .mejs-container {
     width: 400px !important;
     margin-bottom: 22px;
@@ -494,12 +494,12 @@ img.wp-post-image {
 .entry blockquote p, .comment-content blockquote p {
 	line-height: 1.7em;
 }
-
+/*
 .entry .alignnone {
     max-width: 100%;
     height: auto;
 }
-
+*/
 .entry img.alignleft, .entry .wp-caption.alignleft {
     margin: 5px 20px 5px -10px;
 }
@@ -1037,7 +1037,6 @@ font-size:60px;
 	width:100%;
 }
 .devotion-content{
-	margin-bottom: 30px;
 }
 .content-devotion-background{
 	background: #ffffff;
@@ -1114,4 +1113,80 @@ font-size:60px;
   padding-left: 20px;
 }
 
+.top-main-en{
+	margin-top:10px;
+	margin-bottom:500px;
+}
+
+.title-main-box-en{
+	margin-top:10px;
+	border-bottom:1px solid #000000;
+}
+.main-inbox-en{
+	border-bottom:1px solid #000000;
+}
+.main-inbox-in-en{
+	margin-top:30px;
+	margin-bottom:30px;
+}
+.main-img-size{
+	height:150px;
+	width:100%;
+	box-shadow: 4px 0px 10px #888;
+}
+
+.main-scroll {
+  display: none;
+}
+
+.main-scroll{
+   z-index: 1000;
+   display: block;
+	max-height:850px;
+   overflow-x: hidden;
+   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+/*
+ *  STYLE 4
+ */
+
+#style-4::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 1px 0 0 6px rgba(0,0,0,0.3);
+	background-color: #888;
+}
+
+#style-4::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #888;
+}
+
+#style-4::-webkit-scrollbar-thumb
+{
+	background-color: #ffffff;
+	border: 2px solid #888;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #777;
+}
 /*event & news end*/
+/* event start */
+.title-event{
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-left:30px;
+}
+.img-content-event{
+	margin-left:20px;
+}
+.paragraf-content{
+	margin-left:20px;
+}
+
+/* event stop*/
