@@ -2,7 +2,7 @@
 	<br class="clear" />
 	<br class="clear" />
 	<div class="siteinfo row">
-		<div class="col-xs-12 col-xs-offset-1">
+		<div class="col-md-12 col-md-offset-1">
 			<div class="col-md-3">
 				<address class="text-left">
 					<h4>ABOUT US</h4><br>
@@ -20,7 +20,7 @@
 					<small>Jakarta 11071</small><br>
 				</address>
 			</div>
-			<div class="col-md-3 col-xs-offset-1">
+			<div class="col-md-3 col-md-offset-1">
 				<address class="text-left" style="color:grey">
 					<h4>WHAT'S NEW TODAY</h4><br>
 					<a href=""><small>Wasiat</small></a><br>
@@ -31,7 +31,7 @@
 					<a href=""><small>Jendela Hati</small></a><br>
 				</address>
 			</div>
-			<div class="col-md-3 col-xs-offset-1">
+			<div class="col-md-3 col-md-offset-1">
 				<address class="text-left">
 					<h4>CONNECT WITH US</h4><br>
 					<small>Telepon:</small><br>

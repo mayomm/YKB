@@ -501,7 +501,8 @@ img.wp-post-image {
 }
 */
 .entry img.alignleft, .entry .wp-caption.alignleft {
-    margin: 5px 20px 5px -10px;
+    margin: 5px 40px 5px 20px;
+	box-shadow: 7px -5px 10px #888;
 }
 
 .entry img.alignright, .entry .wp-caption.alignright {
@@ -903,6 +904,19 @@ input[type="password"], input[type="text"], input[type="search"] {
 .border-red{
 	border: 5px solid #FF0000;
 }
+.font-ukuran-1:first-letter {
+text-transform: uppercase;
+display:block;
+margin:10px 0 0 5px;
+float:left;
+font-size:70px;
+}
+.font-ukuran-2 {
+font-size:10px;
+}
+.aa{
+	margin-left:10px;
+}
 /*our vision group end*/
 /*Board of director start*/
 .image-custom-director{
@@ -1188,5 +1202,6 @@ hr {
 .paragraf-content{
 	margin-left:20px;
 }
+
 
 /* event stop*/
