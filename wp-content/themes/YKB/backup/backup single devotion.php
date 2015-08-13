@@ -24,13 +24,13 @@
 			  </ul>
 		  </div>
 			<div class="col-md-7 main content-devotion-background ">
-					<div id="img-content-top"class="col-md-14 img-devotion-content-top">
-						<img src="<?php bloginfo('template_url'); ?>/images/footer/bromo1.jpg" class="img-devotion-main">
-					</div>
 							<div class="<?php echo $romangie_left_col_class; ?>">
 								<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 									<?php $romangie_countComments = wp_count_comments(get_the_ID()); ?>
 										<div id="post-<?php the_ID(); ?>" <?php post_class('row post-roll'); ?>>
+											<div id="img-content-top"class="col-md-14 img-devotion-content-top">
+												<img src="<?php bloginfo('template_url'); ?>/images/footer/bromo1.jpg" class="img-devotion-main">
+											</div>
 											<div class="devotion-content-top">
 												<div class="row">
 													<div >
