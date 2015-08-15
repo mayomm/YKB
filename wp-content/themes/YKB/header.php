@@ -12,26 +12,32 @@
     <body <?php body_class( ); ?>>
 		<div class="container">
 			<div class="header row col-md-14 headergambar" id="header" role="banner">
-						<div class="col-md-offset-1 col-md-4">
-							<h1 id="site-title">
-								<a href="<?php echo home_url(); ?>"><?php bloginfo('name', 'display'); ?></a>
-							</h1>
-							<h2 id="site-description"><?php bloginfo('description'); ?></h2>
+						<div class="col-md-4 content-header">
+								<a href="<?php echo home_url(); ?>">
+									<div class="col-md-3 img-header">
+											<img src="<?php bloginfo(template_url); ?>/images/jesus.png">
+									</div>
+									<div class="col-md-12">
+									<h3 id="site-title"><?php bloginfo('name', 'display'); ?></h3>
+									<h2 id="site-description"><?php bloginfo('description'); ?></h2>
+									</div>
+								</a>
 						</div>
-						<div class="col-md-4 col-md-offset-2 headersos">
-							<div class="col-sm-offset-3">
+						<div class="col-md-4 col-md-offset-3 headersos">
+							<div class="col-sm-offset-3 ">
 								<div class="text-right" id="headersite-title">
 									<address>
-										<a href="" class="glyphicon glyphicon-off headerlogin"> SignIn</a> 
+										<a href="" class="headerlogin"><div class="glyphicon glyphicon-off"></div> <span>Sign In</span></a> 
 										<a href="" ><img src="<?php bloginfo('template_url'); ?>/images/header/twitter-icon.png" class="img-rounded" height="25px" width="25px" ></a> 
 										<a href="" ><img src="<?php bloginfo('template_url'); ?>/images/header/face-icon.png" height="35px" width="35px" class="img-rounded"></a>
+										
 									<address>
 								</div>
 								<div class="input-group input-sm headersos ">
 									<input type="search" value="" name="s" class="search-field form-control input-sm" placeholder="Search...">
-									<span class="input-group-btn">
-									  <button type="submit" class="search-submit btn input-sm"><span class="glyphicon glyphicon-search"></span></button>
-									</span>
+									<div class="input-group-btn">
+									  <button type="submit" class="btn input-sm"><div class="glyphicon glyphicon-search"></div></button>
+									</div>
 								</div>
 							</div>
 						</div>

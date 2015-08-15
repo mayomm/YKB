@@ -150,11 +150,23 @@
 				'after_title' => '</h4>'
 			)
 		);
-		// Register left footer widget
+		// Register left devotion widget
 		register_sidebar(
 			array(
 				'id' => 'rightdevotion',
 				'name' => __('Right Devotion', 'romangie'),
+				'description' => __( 'This is the widget area for the right part of the Devotion', 'romangie'),
+				'before_widget' => '<div id="%1$s" class="widget %2$s">',
+				'after_widget' => '</div>',
+				'before_title' => '<h4 class="widget-title">',
+				'after_title' => '</h4>'
+			)
+		);
+		// Register top left video widget
+		register_sidebar(
+			array(
+				'id' => 'lefttopvideo',
+				'name' => __('Top left video', 'romangie'),
 				'description' => __( 'This is the widget area for the right part of the Devotion', 'romangie'),
 				'before_widget' => '<div id="%1$s" class="widget %2$s">',
 				'after_widget' => '</div>',

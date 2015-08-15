@@ -4,6 +4,9 @@ Template Name: Page Even News
 */
 get_header(); ?>
 	<div id="content" class="content-area col-sm-12 col-md-12">
+		<div class="img-top">
+			<img src="<?php bloginfo('template_url'); ?>/images/footer/bromo1.jpg" class="image-custom" />
+		</div>
 		<div class="container-fluid">
 		  <div class="row">
 			<div class="col-sm-4 col-md-3 sidebaren margin-devotion-sidebar">

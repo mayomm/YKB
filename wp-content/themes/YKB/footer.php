@@ -4,14 +4,14 @@
 	<div class="siteinfo row">
 		<div class="col-md-12 col-md-offset-1">
 			<div class="col-md-3">
-				<address class="text-left">
+				<address class="text-left font-footer">
 					<h4>ABOUT US</h4><br>
 					<small>Our History & Board Of Director</small><br>
 					<small>Our Vision & Mission</small><br>
 				</address>
 				<br>
 				<br>
-				<address class="text-left">
+				<address class="text-left font-footer">
 					<strong>Yayasan Komunikasi bersama</strong><br>
 					<small>Graha Arteri Mas Kav. 19-20</small><br>
 					<small>Jl.Panjang No.69</small><br>
@@ -21,7 +21,7 @@
 				</address>
 			</div>
 			<div class="col-md-3 col-md-offset-1">
-				<address class="text-left" style="color:grey">
+				<address class="text-left font-footer">
 					<h4>WHAT'S NEW TODAY</h4><br>
 					<a href=""><small>Wasiat</small></a><br>
 					<a href=""><small>Youth For Christ</small></a><br>
@@ -31,8 +31,8 @@
 					<a href=""><small>Jendela Hati</small></a><br>
 				</address>
 			</div>
-			<div class="col-md-3 col-md-offset-1">
-				<address class="text-left">
+			<div class="col-md-3 col-md-offset-1 ">
+				<address class="text-left font-footer">
 					<h4>CONNECT WITH US</h4><br>
 					<small>Telepon:</small><br>
 					<small>+62 21 583 03398/+62 21 583 03498</small><br>

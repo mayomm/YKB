@@ -40,7 +40,7 @@ img {
 	height: auto;
 	box-sizing: border-box;
 }
-
+/*
 @font-face {
 	font-family: 'ElegantIcons';
 	src:url('fonts/ElegantIcons.eot');
@@ -51,10 +51,10 @@ img {
 	font-weight: normal;
 	font-style: normal;
 }
-
+*/
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
-	font-family: 'ElegantIcons';
+	font-family: Arial, sans-serif;
 	content: attr(data-icon);
 	speak: none;
 	font-weight: normal;
@@ -425,7 +425,7 @@ img.wp-post-image {
 
 .entry h3, .entry h4, .entry h5, .entry h6, .comment-content h3, .comment-content h4, .comment-content h5, .comment-content h6 {
 	font-weight: normal;
-	color: #777;
+	color: #000000;
 	margin: 20px 0 10px;
 }
 
@@ -464,7 +464,7 @@ img.wp-post-image {
 }
 
 .entry pre, .comment-content pre {
-	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-family: Arial, Helvetica, sans-serif;
 	margin: 2em 0;
 	padding: 1em 2em;
 }
@@ -486,7 +486,7 @@ img.wp-post-image {
 	color: #b12930;
 	font-size: 500%;
 	position: absolute;
-	font-family: Georgia, serif;
+	font-family: Arial, Helvetica, sans-serif;
 	top: 40%;
 	left: -0.3em;
 }
@@ -654,22 +654,21 @@ code {
 }
 
 .siteinfo {
-	background: #0e0e0e;
+	background: #ffffff;
 	padding: 20px 0;
 	border-top: 1px solid #000;
 	text-align: center;
-    text-shadow: 1px 1px #111;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 }
 
 .footer a, .siteinfo a {
-    color: grey;
+    color: black;
 }
 
 .siteinfo p, .footer td, .footer th {
 	font-size: 13px;
-	color: #aaa;
+	color: black;
 }
 
 /** Widgets */
@@ -826,6 +825,22 @@ input[type="password"], input[type="text"], input[type="search"] {
 	 text-align: center;
 }
 /* custom self */
+/* header start*/
+.img-header img{
+	width:80px;
+	height:60px;
+}
+.content-header{
+	margin-top:15px;
+	margin-left:20px;
+}
+/* header end*/
+/*footer start*/
+.font-footer small, strong {
+	font-size: 14px;
+	font-style: normal;
+}
+/*footer end*/
 .headergambar{
 	background-color: #FFD633;
 }
@@ -833,7 +848,9 @@ input[type="password"], input[type="text"], input[type="search"] {
 	margin-top:10px;
 }
 .headerlogin {
+	color:black;
     margin-right: 20px;
+	font-size:14px;
 }
 .footersos {
     margin-top: 10px;
@@ -849,6 +866,9 @@ input[type="password"], input[type="text"], input[type="search"] {
 .font-radio{
 	font-style:normal;
 	text-align:center;
+}
+.radio-margin h6{
+	margin-top:-5px;
 }
 .image-custom{
     width: 1110px;
@@ -907,22 +927,20 @@ input[type="password"], input[type="text"], input[type="search"] {
 .font-ukuran-1:first-letter {
 text-transform: uppercase;
 display:block;
-margin:10px 0 0 5px;
+margin:0 5px 0 5px;
 float:left;
-font-size:70px;
-line-height:60px
+font-size:45px;
+line-height:40px
 }
-.font-min-height{
-	min-height:70px;
+.font-ourmission{
+	min-height:50px;
 }
-.font-ukuran-2 {
-font-size:100px;
-}
-.aa{
-	margin-top:10px;
-}
-p.bb{
-	line-height:2px;
+p.side-ourmission{
+	line-height:15px;
+	font-size:15px;
+	margin-right:-10px;
+	margin-left:-20px;
+	margin-top:20px;
 }
 /*our vision group end*/
 /*Board of director start*/
@@ -933,10 +951,31 @@ p.bb{
 
 .font-ukuran:first-letter {
 text-transform: uppercase;
+font-family: Arial, Helvetica, sans-serif;
 display:block;
-margin:10px 0 0 5px;
+margin:10px 0 0 0;
 float:left;
 font-size:60px;
+}
+.font-arial{
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+.font-arial p{
+	font-family: Arial, Helvetica, sans-serif;
+	line-height:18px;
+}
+.font-andalus{
+	font-family: Andalus, Helvetica, serif;
+}
+.font-andalus span{
+	font-size:10px;
+}
+.font-andalus p{
+	margin-top:-5px;
+	font-family: Calibri, Helvetica, sans-serif;
+	font-size:11px;
+	color:#000000;
 }
 
 	
@@ -965,9 +1004,8 @@ font-size:60px;
 	border-bottom: 2px solid #000000;
 }
 .font-border-down-director{
-	margin-bottom:5px;
 	text-align: center;
-	font-size: 9px;
+	margin-bottom:-2px;
 }
 .margin-left-director{
 	text-align:center;
@@ -981,7 +1019,27 @@ font-size:60px;
 	margin-top:30px;
 	margin-left:30px;
 }
+.margin-directorytop{
+	margin-bottom:30px;
+}
+.img-circle-top img{
+	height:150px;
+	width:150px;
+	text-align:center;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+.font-circle-top p{
+	color:white;
+	margin-bottom:40px;
+}
+
 /*Board of director end*/
+/* bible online start*/
+.font-bible{
+	color:black;
+}
+/* bible online end*/
 /* devotion start*/
 /*
  * Sidebar
@@ -1029,8 +1087,8 @@ font-size:60px;
 }
 
 .margin-devotion-sidebar{
-	margin-left:30px;
-	margin-right:10px;
+	margin-left:15px;
+	margin-right:30px;
 }
 .margin-devotion-main{
 	margin-left:20px;
@@ -1070,6 +1128,11 @@ font-size:60px;
 }
 /*devtion end*/
 /*event & news start*/
+.img-top{
+	margin-bottom:30px;
+}
+
+
 .sidebaren h4 ,.sidebaren label, .sidebaren caption, .comments-title {
 	color: #444;
 	font-size: 18px;
@@ -1143,6 +1206,10 @@ font-size:60px;
 	margin-top:10px;
 	border-bottom:1px solid #000000;
 }
+.title-main-box-en h4{
+	margin-bottom:10px;
+}
+
 .main-inbox-en{
 	border-bottom:1px solid #000000;
 }
