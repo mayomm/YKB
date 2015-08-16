@@ -48,7 +48,7 @@ $paramssld["ht_view2_element_linkbutton_color"] = "ffffff";
 $paramssld["ht_view2_element_linkbutton_font_size"] = "14";
 $paramssld["ht_view2_element_linkbutton_background_color"] = "FF2C2C";
 $paramssld["ht_view2_show_popup_linkbutton"] = "on";
-$paramssld["ht_view2_popup_linkbutton_text"] = "View More";
+$paramssld["ht_view2_popup_linkbutton_text"] = "mayo";
 $paramssld["ht_view2_popup_linkbutton_background_hover_color"] = "c02121";
 $paramssld["ht_view2_popup_linkbutton_background_color"] = "FF2C2C";
 $paramssld["ht_view2_popup_linkbutton_font_hover_color"] = "ffffff";
@@ -1086,7 +1086,7 @@ jQuery(document).ready(function(){
 }
 </style>
 <section id="huge_it_videogallery_content_<?php echo $videogalleryID; ?>">
-  <div id="huge_it_videogallery_container_<?php echo $videogalleryID; ?>" class="super-list variable-sizes clearfix">
+  <div id="huge_it_videogallery_container_<?php echo $videogalleryID; ?>" class="mayo super-list variable-sizes clearfix">
   	<input type="hidden" class="pagenum" value="1" />
   	<?php
 			foreach($images as $image){
@@ -1894,7 +1894,7 @@ jQuery(document).ready(function(){
 
 </style>
 <section id="huge_it_videogallery_content_<?php echo $videogalleryID; ?>">
-  <div id="huge_it_videogallery_container_<?php echo $videogalleryID; ?>" class="mayo super-list variable-sizes clearfix">
+  <div id="huge_it_videogallery_container_<?php echo $videogalleryID; ?>" class="super-list variable-sizes clearfix">
   	<input type="hidden" class="pagenum" value="1" />
   	<?php
 			foreach($images as $image){
