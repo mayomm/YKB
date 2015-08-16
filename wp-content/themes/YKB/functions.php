@@ -167,7 +167,19 @@
 			array(
 				'id' => 'lefttopvideo',
 				'name' => __('Top left video', 'romangie'),
-				'description' => __( 'This is the widget area for the right part of the Devotion', 'romangie'),
+				'description' => __( 'This is the widget area for the left of top part of the Video', 'romangie'),
+				'before_widget' => '<div id="%1$s" class="widget %2$s">',
+				'after_widget' => '</div>',
+				'before_title' => '<h4 class="widget-title">',
+				'after_title' => '</h4>'
+			)
+		);
+		// Register top middle video widget
+		register_sidebar(
+			array(
+				'id' => 'middletopvideo',
+				'name' => __('Top Middle Video', 'romangie'),
+				'description' => __( 'This is the widget area for the middle of top part of the Video', 'romangie'),
 				'before_widget' => '<div id="%1$s" class="widget %2$s">',
 				'after_widget' => '</div>',
 				'before_title' => '<h4 class="widget-title">',

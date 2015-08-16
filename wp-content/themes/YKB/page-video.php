@@ -14,22 +14,9 @@ get_header(); ?>
 				<?php dynamic_sidebar( 'lefttopvideo' ); ?>
 			</div>
 			<div class="col-md-4 font-radio">
-				<a href="http://localhost/YKB/wp-content/uploads/2015/07/Chrysanthemum.jpg"><img class="alignnone size-full wp-image-8" src="http://localhost/YKB/wp-content/uploads/2015/07/Chrysanthemum.jpg" alt="Chrysanthemum" width="300" height="100" /></a>
-				<div class="col-md-12">
-					<address>
-					When Barbara's symptoms worsened after 15 years, her fears were erased with a prayer spoken on The 700 Club.
-					<a href="">Watch Now!</a>
-					</address>
-				</div>
+				<?php dynamic_sidebar('middletopvideo'); ?>
 			</div>
 			<div class="col-md-4 font-radio">
-				<a href="http://localhost/YKB/wp-content/uploads/2015/07/Chrysanthemum.jpg"><img class="alignnone size-full wp-image-8" src="http://localhost/YKB/wp-content/uploads/2015/07/Chrysanthemum.jpg" alt="Chrysanthemum" width="300" height="100" /></a>
-				<div class="col-md-12">
-					<address>
-					When Barbara's symptoms worsened after 15 years, her fears were erased with a prayer spoken on The 700 Club.
-					<a href="">Watch Now!</a>
-					</address>
-				</div>
 			</div>
 		</div>
 		<div class="row">

@@ -1894,7 +1894,7 @@ jQuery(document).ready(function(){
 
 </style>
 <section id="huge_it_videogallery_content_<?php echo $videogalleryID; ?>">
-  <div id="huge_it_videogallery_container_<?php echo $videogalleryID; ?>" class="super-list variable-sizes clearfix">
+  <div id="huge_it_videogallery_container_<?php echo $videogalleryID; ?>" class="mayo super-list variable-sizes clearfix">
   	<input type="hidden" class="pagenum" value="1" />
   	<?php
 			foreach($images as $image){
