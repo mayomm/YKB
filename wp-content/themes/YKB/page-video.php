@@ -17,36 +17,22 @@ get_header(); ?>
 				<?php dynamic_sidebar('middletopvideo'); ?>
 			</div>
 			<div class="col-md-4 font-radio">
+				<?php dynamic_sidebar('righttopvideo');?>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-4 font-radio">
-				<a href="http://localhost/YKB/wp-content/uploads/2015/07/Chrysanthemum.jpg"><img class="alignnone size-full wp-image-8" src="http://localhost/YKB/wp-content/uploads/2015/07/Chrysanthemum.jpg" alt="Chrysanthemum" width="300" height="100" /></a>
-				<div class="col-md-12">
-					<address>
-					When Barbara's symptoms worsened after 15 years, her fears were erased with a prayer spoken on The 700 Club.
-					<a href="">Watch Now!</a>
-					</address>
-				</div>
+				<?php dynamic_sidebar('leftbottomvideo');?>
 			</div>
 		<div class="col-md-4 font-radio">
-			<a href="http://localhost/YKB/wp-content/uploads/2015/07/Chrysanthemum.jpg"><img class="alignnone size-full wp-image-8" src="http://localhost/YKB/wp-content/uploads/2015/07/Chrysanthemum.jpg" alt="Chrysanthemum" width="300" height="100" /></a>
-			<div class="col-md-12">
-				<address>
-				When Barbara's symptoms worsened after 15 years, her fears were erased with a prayer spoken on The 700 Club.
-				<a href="">Watch Now!</a>
-				</address>
-			</div>
+			<?php dynamic_sidebar('middlebottomvideo'); ?>
 		</div>
 		<div class="col-md-4 font-radio">
-			<a href="http://localhost/YKB/wp-content/uploads/2015/07/Chrysanthemum.jpg"><img class="alignnone size-full wp-image-8" src="http://localhost/YKB/wp-content/uploads/2015/07/Chrysanthemum.jpg" alt="Chrysanthemum" width="300" height="100" /></a>
-			<div class="col-md-12">
-				<address>
-				When Barbara's symptoms worsened after 15 years, her fears were erased with a prayer spoken on The 700 Club.
-				<a href="">Watch Now!</a>
-				</address>
-			</div>
+			<?php dynamic_sidebar('rightbottomvideo'); ?>
 		</div>
+		</div>
+		<div class="col-md-12">
+			<?php dynamic_sidebar('homeslidervideo'); ?>
 		</div>
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<div class="row content">

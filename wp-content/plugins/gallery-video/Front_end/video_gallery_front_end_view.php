@@ -48,7 +48,7 @@ $paramssld["ht_view2_element_linkbutton_color"] = "ffffff";
 $paramssld["ht_view2_element_linkbutton_font_size"] = "14";
 $paramssld["ht_view2_element_linkbutton_background_color"] = "FF2C2C";
 $paramssld["ht_view2_show_popup_linkbutton"] = "on";
-$paramssld["ht_view2_popup_linkbutton_text"] = "mayo";
+$paramssld["ht_view2_popup_linkbutton_text"] = "Watch Now!";
 $paramssld["ht_view2_popup_linkbutton_background_hover_color"] = "c02121";
 $paramssld["ht_view2_popup_linkbutton_background_color"] = "FF2C2C";
 $paramssld["ht_view2_popup_linkbutton_font_hover_color"] = "ffffff";
@@ -61,7 +61,7 @@ $paramssld["ht_view2_thumbs_width"] = "75";
 $paramssld["ht_view2_thumbs_height"] = "75";
 $paramssld["ht_view2_thumbs_position"] = "before";
 $paramssld["ht_view2_show_thumbs"] = "on";
-$paramssld["ht_view2_popup_background_color"] = "FFFFFF";
+$paramssld["ht_view2_popup_background_color"] = "000000";
 $paramssld["ht_view2_popup_overlay_color"] = "000000";
 $paramssld["ht_view2_popup_overlay_transparency_color"] = "95";
 $paramssld["ht_view2_popup_closebutton_style"] = "white";
@@ -685,7 +685,7 @@ jQuery(document).ready(function(){
 
 #huge_it_videogallery_content_<?php echo $videogalleryID; ?> #huge_it_videogallery_container_<?php echo $videogalleryID; ?> .element_<?php echo $videogalleryID; ?> {
 	width:<?php echo $paramssld['ht_view2_element_width']; ?>px;
-	height:<?php echo $paramssld['ht_view2_element_height']+150; ?>px;
+	height:<?php echo $paramssld['ht_view2_element_height']+200; ?>px;
 	margin:0px 0px 10px 0px;
 	background:#<?php echo $paramssld['ht_view2_element_background_color']; ?>;
 	border:<?php echo $paramssld['ht_view2_element_border_width']; ?>px solid #<?php echo $paramssld['ht_view2_element_border_color']; ?>;
@@ -878,12 +878,13 @@ jQuery(document).ready(function(){
 #huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?> .heading-navigation .close,#huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?> .heading-navigation .close:link, #huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?> .heading-navigation .close:visited {
 	position:relative;
 	float:right;
-	width:20px;
-	height:20px;
+	width:30px;
+	height:30px;
 	display:block;
 	background:url('<?php echo  plugins_url( '../images/close.popup.'.$paramssld["ht_view2_popup_closebutton_style"].'.png' , __FILE__ ); ?>') center center no-repeat;
 	opacity:1;
 	background-color:red;
+	margin:5px 10px 0 0;
 }
 
 #huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?> .heading-navigation .close:hover, #huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?> .heading-navigation .close:focus, #huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?> .heading-navigation .close:active {opacity:1;}
@@ -1087,9 +1088,18 @@ jQuery(document).ready(function(){
 }
 .title-background{
 	background: #d9d9d9;
+	min-height:500px;
 }
 .title-margin{
 	margin-top:20px;
+}
+.youtube-logo{
+	position:relative;
+	float:left;
+	width:100px;
+	height:40px;
+	background:url('<?php echo  plugins_url( '../images/youtubelogo.png' , __FILE__ ); ?>') center center no-repeat;
+	opacity:1;
 }
 </style>
 <section id="huge_it_videogallery_content_<?php echo $videogalleryID; ?>">
@@ -1448,7 +1458,9 @@ jQuery(document).ready(function(){
 		$result = substr($descnohtml, 0, 50);
 		?>
 		<li class="pupup-element mayodhi" id="huge_it_videogallery_pupup_element_<?php echo $row->id; ?>">
+			
 			<div class="heading-navigation">
+				<div class="youtube-logo"></div>
 				<a href="#close" class="close"></a>
 				<div style="clear:both;"></div>
 			</div>

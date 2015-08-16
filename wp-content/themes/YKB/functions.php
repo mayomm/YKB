@@ -186,7 +186,67 @@
 				'after_title' => '</h4>'
 			)
 		);
-
+		// Register top right video widget
+		register_sidebar(
+			array(
+				'id' => 'righttopvideo',
+				'name' => __('Top Right Video', 'romangie'),
+				'description' => __( 'This is the widget area for the right of top part of the Video', 'romangie'),
+				'before_widget' => '<div id="%1$s" class="widget %2$s">',
+				'after_widget' => '</div>',
+				'before_title' => '<h4 class="widget-title">',
+				'after_title' => '</h4>'
+			)
+		);
+		// Register bottom left video widget
+		register_sidebar(
+			array(
+				'id' => 'leftbottomvideo',
+				'name' => __('Bottom Left Video', 'romangie'),
+				'description' => __( 'This is the widget area for the left of bottom part of the Video', 'romangie'),
+				'before_widget' => '<div id="%1$s" class="widget %2$s">',
+				'after_widget' => '</div>',
+				'before_title' => '<h4 class="widget-title">',
+				'after_title' => '</h4>'
+			)
+		);
+		// Register bottom middle video widget
+		register_sidebar(
+			array(
+				'id' => 'middlebottomvideo',
+				'name' => __('Bottom middle Video', 'romangie'),
+				'description' => __( 'This is the widget area for the middle of bottom part of the Video', 'romangie'),
+				'before_widget' => '<div id="%1$s" class="widget %2$s">',
+				'after_widget' => '</div>',
+				'before_title' => '<h4 class="widget-title">',
+				'after_title' => '</h4>'
+			)
+		);
+		// Register bottom right video widget
+		register_sidebar(
+			array(
+				'id' => 'rightbottomvideo',
+				'name' => __('Bottom Right Video', 'romangie'),
+				'description' => __( 'This is the widget area for the right of bottom part of the Video', 'romangie'),
+				'before_widget' => '<div id="%1$s" class="widget %2$s">',
+				'after_widget' => '</div>',
+				'before_title' => '<h4 class="widget-title">',
+				'after_title' => '</h4>'
+			)
+		);
+		// Register Home Slider video widget
+		register_sidebar(
+			array(
+				'id' => 'homeslidervideo',
+				'name' => __('Home Slider Video', 'romangie'),
+				'description' => __( 'This is the widget area for the home part of the Video', 'romangie'),
+				'before_widget' => '<div id="%1$s" class="widget %2$s">',
+				'after_widget' => '</div>',
+				'before_title' => '<h4 class="widget-title">',
+				'after_title' => '</h4>'
+			)
+		);
+		
 	}	
 
 	add_action( 'widgets_init', 'romangie_register_sidebar');
