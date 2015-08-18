@@ -4,7 +4,7 @@ Template Name: Page Video
 */
 get_header(); ?>
 	<div id="content" class="content-area col-sm-12 col-md-12">
-		<img class="image-custom-1" src="http://localhost/YKB/wp-content/uploads/2015/08/wp_2560.jpg" alt="wp_2560" width="2560" height="1440" />
+		<img class="image-custom-1<?php the_ID(); ?>" src="http://localhost/YKB/wp-content/uploads/2015/08/wp_2560.jpg" alt="wp_2560" width="2560" height="1440" />
 		<div class="font-wrap">
 			<h2 class="entry-title">INSIPRATIONAL VIDEO</h2>
 		</div>
@@ -33,7 +33,7 @@ get_header(); ?>
 		</div>
 		<div class="col-md-12">
 			<?php dynamic_sidebar('homeslidervideo'); ?>
-			<?php echo do_shortcode('[wonderplugin_carousel id="1"]'); ?>
+			<?php echo do_shortcode('[slidercc id="228"]'); ?>
 		</div>
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<div class="row content">

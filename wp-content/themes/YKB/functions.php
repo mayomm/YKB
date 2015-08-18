@@ -83,7 +83,7 @@
 
 	/* Custom Continue Reading Link */
 	function romangie_new_excerpt_more( $romangie_more ) {
-		return '<div class="buttom-excerpt"> <a class="more-link excerpt-link" href="'. get_permalink( get_the_ID() ) . '">' . __('READ MORE', 'romangie') . '</a> </div>';
+		return '<div class="buttom-excerpt'.get_the_ID().'"> <a class="more-link excerpt-link" href="'. get_permalink( get_the_ID() ) . '">' . __('READ MORE', 'romangie') . '</a> </div>';
 	}
 	add_filter( 'excerpt_more', 'romangie_new_excerpt_more' );
 
