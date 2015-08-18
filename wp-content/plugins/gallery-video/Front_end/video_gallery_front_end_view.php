@@ -633,7 +633,7 @@ jQuery(function(){
       return false;
     });
 });
-
+/*frame belakang dan video*/
 jQuery(document).ready(function(){
 
 	jQuery('.element_<?php echo $videogalleryID; ?> .image-block_<?php echo $videogalleryID; ?> .videogallery-image-overlay a').on('click',function(){
@@ -644,9 +644,9 @@ jQuery(document).ready(function(){
 		var width=jQuery(window).width();
 		if(width<=767){
 			jQuery('body').scrollTop(0);
-			jQuery('#huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?> .popup-wrapper_<?php echo $videogalleryID; ?> .image-block_<?php echo $videogalleryID; ?> iframe').height(jQuery('body').width()*0.5);
-		}else {jQuery('#huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?> .popup-wrapper_<?php echo $videogalleryID; ?> .image-block_<?php echo $videogalleryID; ?> iframe').height(jQuery('body').width()*0.23);}
-		jQuery('#huge_it_videogallery_pupup_element_'+strid).addClass('active').css({height:height*0.7});
+			jQuery('#huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?> .popup-wrapper_<?php echo $videogalleryID; ?> .image-block_<?php echo $videogalleryID; ?> iframe').height(jQuery('body').width()*0.7);
+		}else {jQuery('#huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?> .popup-wrapper_<?php echo $videogalleryID; ?> .image-block_<?php echo $videogalleryID; ?> iframe').height(jQuery('body').width()*0.35);}
+		jQuery('#huge_it_videogallery_pupup_element_'+strid).addClass('active').css({height:height*0.8});
 		jQuery('#huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?>').addClass('active');
 		
 		return false;
@@ -674,7 +674,7 @@ jQuery(document).ready(function(){
 	}
 
 	jQuery(window).resize(function(){
-		jQuery('#huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?> .popup-wrapper_<?php echo $videogalleryID; ?> .image-block_<?php echo $videogalleryID; ?> iframe').height(jQuery('#huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?> .popup-wrapper_<?php echo $videogalleryID; ?> .image-block_<?php echo $videogalleryID; ?>').width()*0.5);
+		jQuery('#huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?> .popup-wrapper_<?php echo $videogalleryID; ?> .image-block_<?php echo $videogalleryID; ?> iframe').height(jQuery('#huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?> .popup-wrapper_<?php echo $videogalleryID; ?> .image-block_<?php echo $videogalleryID; ?>').width()*0.7);
 	});
 
 	
@@ -696,7 +696,7 @@ jQuery(document).ready(function(){
 	position:relative;
 	width:100%;
 }
-
+/*untuk ngatur tinggi gambar*/
 #huge_it_videogallery_content_<?php echo $videogalleryID; ?> #huge_it_videogallery_container_<?php echo $videogalleryID; ?> .element_<?php echo $videogalleryID; ?> .image-block_<?php echo $videogalleryID; ?> img {
 	width:<?php echo $paramssld['ht_view2_element_width']; ?>px !important;
 	height:<?php echo $paramssld['ht_view2_element_height']; ?>px !important;
@@ -846,7 +846,8 @@ jQuery(document).ready(function(){
 	list-style:none;
 	z-index:2000;
 	display:none;
-	height:50%;
+	height:90%;
+	
 }
 
 #huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?>.active {display:table;}
@@ -1465,7 +1466,7 @@ jQuery(document).ready(function(){
 				<div style="clear:both;"></div>
 			</div>
 			<div class="popup-wrapper_<?php echo $videogalleryID; ?>">
-				<div class="image-block_<?php echo $videogalleryID; ?>">					
+				<div class="mahmud image-block_<?php echo $videogalleryID; ?>">					
 					<?php 
 						$imagerowstype=$row->sl_type;
 						if($row->sl_type == ''){$imagerowstype='image';}
