@@ -33,6 +33,7 @@ get_header(); ?>
 		</div>
 		<div class="col-md-12">
 			<?php dynamic_sidebar('homeslidervideo'); ?>
+			<?php echo do_shortcode('[wonderplugin_carousel id="1"]'); ?>
 		</div>
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<div class="row content">

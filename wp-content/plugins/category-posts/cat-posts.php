@@ -94,13 +94,6 @@ class CategoryPosts extends WP_Widget {
 		echo $before_widget;
 
 		// Widget title
-		echo $before_title;
-		if( isset ( $instance["title_link"] ) ) {
-			echo '<a href="' . get_category_link($instance["cat"]) . '">' . $instance["title"] . '</a>';
-		} else {
-			echo $instance["title"];
-		}
-		echo $after_title;
 
 		// Post list
 		
@@ -112,16 +105,6 @@ class CategoryPosts extends WP_Widget {
 			<div class="main-inbox-en">
 				<div class="col-md-12 ">
 				<div class="row main-inbox-in-en ">
-				<a class="post-title <?php if( !isset( $instance['disable_css'] ) ) { echo " cat-post-title"; } ?>" 
-					href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
-				
-				<?php if ( isset( $instance['date'] ) ) : ?>
-					<p class="post-date <?php if( !isset( $instance['disable_css'] ) ) { echo " cat-post-date"; } ?>">
-					<?php the_time("j M Y"); ?>
-					
-					</p>
-				<?php endif; ?>
-
 				<?php
 					if (
 						function_exists('the_post_thumbnail') &&
@@ -130,7 +113,7 @@ class CategoryPosts extends WP_Widget {
 						has_post_thumbnail()
 					) :
 				?>
-					<div class="col-md-4 background-color-a">
+					<div class="col-md-4">
 					<a <?php if( !isset( $instance['disable_css'] ) ) { echo "class=\"cat-post-thumbnail\""; } ?>
 						href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 					<?php the_post_thumbnail( 'cat_post_thumb_size'.$this->id ); ?>
@@ -138,6 +121,13 @@ class CategoryPosts extends WP_Widget {
 					</div>
 				<?php endif; ?>
 				<div class="col-md-8">
+				<?php if ( isset( $instance['date'] ) ) : ?>
+					<p class="post-date <?php if( !isset( $instance['disable_css'] ) ) { echo " cat-post-date"; } ?>">
+					<?php the_time("j M Y"); ?> - <span class="post-title <?php if( !isset( $instance['disable_css'] ) ) { echo " cat-post-title"; } ?>" 
+					href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></span> 
+					
+					</p>
+				<?php endif; ?>
 				<?php if ( isset( $instance['excerpt'] ) ) : ?>
 				<?php the_excerpt(); ?> 
 				<?php endif; ?>

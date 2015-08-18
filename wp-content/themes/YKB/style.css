@@ -26,6 +26,11 @@ strong, sub, sup, tt, var, legend, fieldset {
 img, fieldset {
 	border: 0;
 }
+body.single article.post .featured-img {
+height:auto;
+width: 0px;
+margin:0;
+}
 
 /* set html5 elements to block */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
@@ -786,6 +791,7 @@ input[type="password"], input[type="text"], input[type="search"] {
 .more-link {
 	padding: 3px 15px;
 	margin-top: 10px;
+	background:red;
 }
 
 .more-link .glyphicon {
@@ -793,6 +799,8 @@ input[type="password"], input[type="text"], input[type="search"] {
 }
 
 .excerpt-link {
+	color:white;
+	font-size:13px;
 	margin-top: 2px;
 	margin-left: 10px;
 }
@@ -1131,7 +1139,9 @@ font-size:60px;
 .img-top{
 	margin-bottom:30px;
 }
-
+.buttom-excerpt{
+	float:right;
+}
 
 .sidebaren h4 ,.sidebaren label, .sidebaren caption, .comments-title {
 	color: #444;

@@ -83,7 +83,7 @@
 
 	/* Custom Continue Reading Link */
 	function romangie_new_excerpt_more( $romangie_more ) {
-		return ' <a class="more-link excerpt-link" href="'. get_permalink( get_the_ID() ) . '">' . __('Continue Reading', 'romangie') . '<span class="glyphicon glyphicon-chevron-right"></span></a>';
+		return '<div class="buttom-excerpt"> <a class="more-link excerpt-link" href="'. get_permalink( get_the_ID() ) . '">' . __('READ MORE', 'romangie') . '</a> </div>';
 	}
 	add_filter( 'excerpt_more', 'romangie_new_excerpt_more' );
 
@@ -240,6 +240,18 @@
 				'id' => 'homeslidervideo',
 				'name' => __('Home Slider Video', 'romangie'),
 				'description' => __( 'This is the widget area for the home part of the Video', 'romangie'),
+				'before_widget' => '<div id="%1$s" class="widget %2$s">',
+				'after_widget' => '</div>',
+				'before_title' => '<h4 class="widget-title">',
+				'after_title' => '</h4>'
+			)
+		);
+		// Register SideBar Event  widget
+		register_sidebar(
+			array(
+				'id' => 'mainsidebarevent',
+				'name' => __('Sidebar Event', 'romangie'),
+				'description' => __( 'This is the widget area for the sidebar part of the event', 'romangie'),
 				'before_widget' => '<div id="%1$s" class="widget %2$s">',
 				'after_widget' => '</div>',
 				'before_title' => '<h4 class="widget-title">',

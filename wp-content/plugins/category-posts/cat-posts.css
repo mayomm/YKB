@@ -9,21 +9,22 @@ Version: 4.1.0
 	line-height: 18px;
 }
 .cat-post-title {
-	font-size: 15px;	
+	font-family: Andalus, Helvetica, sans-serif;
+	font-size: 20px;	
 }
 .cat-post-current a {
 	font-weight: bold;
 	text-transform: uppercase;
 }
 .cat-post-date {
-	font-style: italic;
-	margin-bottom: 0;
+	font-family: Trajan pro, Helvetica, sans-serif;
+	font-size: 20px;
+	margin-bottom: 10px;
 }
 a.cat-post-thumbnail img {
-	float: left; 
-	height:100px;
-	width:100px;
-	margin: 5px 10px 0 0;
+	height:200px;
+	width:100%;
+	box-shadow: 4px 0px 10px #888;
 }
 .cat-post-item {
 	border-bottom: 1px solid #ccc;

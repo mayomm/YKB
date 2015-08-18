@@ -24,7 +24,7 @@
 						</div>
 							<div class="entry event">
 								<div class="col-md-12 ">
-								<?php if ( has_post_thumbnail() ) { the_post_thumbnail( 'full' ); } the_content('Continue Reading <span class="glyphicon glyphicon-chevron-right"></span>'); ?></div>
+								<?php the_content('Continue Reading <span class="glyphicon glyphicon-chevron-right"></span>'); ?></div>
 								</div>
 							</div>
 						<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
