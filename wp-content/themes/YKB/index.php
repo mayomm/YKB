@@ -9,7 +9,7 @@
 	$romangie_content_class = "col-sm-9 col-md-8 content format-" . get_post_format();
 }
 ?>
-<div class="row">
+<div class="row home">
 		<div class="<?php echo $romangie_left_col_class; ?>">
 
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>

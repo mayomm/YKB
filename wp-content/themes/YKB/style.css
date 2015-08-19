@@ -887,6 +887,9 @@ input[type="password"], input[type="text"], input[type="search"] {
     width: 1110px;
     height: 400px;
 }
+.text-ditengah{
+	text-align:center;
+}
 /*our vision group start*/
 .image-our-vision{
 	background :url('http://localhost/YKB/wp-content/themes/YKB/images/footer/bromo.jpg');
@@ -1108,7 +1111,7 @@ font-size:60px;
 
 .title-devotion-main{
 	margin-top:30px;
-	margin-left:30px;
+	margin-left:25px;
 	text-align:center;
 }
 .img-devotion-content-top{
@@ -1120,10 +1123,27 @@ font-size:60px;
 	margin-right:10px;
 }
 .devotion-content-top img{
+	margin-top:10px;
+	margin-bottom:10px;
 	height:300px;
 	width:100%;
 }
 .devotion-content{
+	margin-bottom:30px;
+}
+.devotion-date-tgl{
+	font-family: Calibri, Helvetica, sans-serif;
+	font-size:45px;
+	text-align:center;
+}
+.devotion-date-bulan{
+	margin-top:-10px;
+	font-family: Calibri, Helvetica, sans-serif;
+	font-size:30px;
+	text-align:center;
+}
+.devotion-date{
+	margin-left:15px;
 }
 .content-devotion-background{
 	background: #ffffff;
