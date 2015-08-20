@@ -11,7 +11,7 @@ get_header(); ?>
 					<div>
 						<img src="<?php bloginfo('template_url'); ?>/images/footer/bromo1.jpg" class="image-custom-director" />
 					</div>
-					<div class="background-color-1">
+					<div class="content-devotion-background margin-directorytop font-arial">
 						<div class="row">
 							<div class="col-md-12">
 								<div class="col-sm-6 col-md-8 background-color-b">
@@ -27,11 +27,15 @@ get_header(); ?>
 									Atmarumeksa sebagai Ketua merangkap Direktur Eksekutif, Bp. Yulius Patty sebagai sekertaris, Bp T.K. Gunawan Prihatna 
 									sebagai Bendahara, Pdt. Wiede Benaja dan Bp. S.K. Wijaja sebagai Anggota</small></p>
 								</div>
-								<div class="col-sm-6 col-md-4 margin-min background-color-a">
-									<img src="<?php bloginfo('template_url');?>/images/jesus.png">
-									<p class="font-ukuran">memberikan Injil damai sejahtera dan memperluas Kerajaan Allah merupakan panggilan bagi gereja. 
+								<div class="col-sm-6 col-md-4 margin-min background-color-a align-center">
+									<div class="img-circle-top ">
+										<img src="<?php bloginfo('template_url');?>/images/jesus.png" >
+									</div>
+									<div class="font-circle-top">
+									<p>memberikan Injil damai sejahtera dan memperluas Kerajaan Allah merupakan panggilan bagi gereja. 
 									GKI sebagai kenyataan Tubuh Kristus yang ditempatkan di Indonesia ini juga terpanggil untuk melaksanakan Amanat Agung 
 									dari Sang Kepala Gereja yaitu Yesus Kristus.</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -39,7 +43,7 @@ get_header(); ?>
 					<div class="font-wrap">
 					<h2 class="entry-title"><?php the_title(); ?></h2>
 					</div>
-					<div class="entry">
+					<div class="entry font-andalus">
 	
 						<?php the_content(); ?>
 

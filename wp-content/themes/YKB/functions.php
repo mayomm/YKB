@@ -22,13 +22,19 @@
 			get_stylesheet_directory_uri() . '/js/holder.min.js',
 			array( 'jquery' )
 		);
+		
+		wp_enqueue_script(
+			'romangie-scrollbar',
+			get_stylesheet_directory_uri() . '/js/scrollbar.js',
+			array( 'jquery' )
+		);
 
 		wp_enqueue_style(
 			'romangie-style',
 			get_stylesheet_directory_uri() . '/style.css',
 			array( 'romangie-bootstrap' , 'romangie-bootstrap-theme' )
 		);
-
+		
 		wp_enqueue_script( 'comment-reply' );
 		
 		wp_enqueue_style( 
@@ -77,7 +83,7 @@
 
 	/* Custom Continue Reading Link */
 	function romangie_new_excerpt_more( $romangie_more ) {
-		return ' <a class="more-link excerpt-link" href="'. get_permalink( get_the_ID() ) . '">' . __('Continue Reading', 'romangie') . '<span class="glyphicon glyphicon-chevron-right"></span></a>';
+		return '<div class="buttom-excerpt'.get_the_ID().'"> <a class="more-link excerpt-link" href="'. get_permalink( get_the_ID() ) . '">' . __('READ MORE', 'romangie') . '</a> </div>';
 	}
 	add_filter( 'excerpt_more', 'romangie_new_excerpt_more' );
 
@@ -144,7 +150,115 @@
 				'after_title' => '</h4>'
 			)
 		);
-
+		// Register left devotion widget
+		register_sidebar(
+			array(
+				'id' => 'rightdevotion',
+				'name' => __('Right Devotion', 'romangie'),
+				'description' => __( 'This is the widget area for the right part of the Devotion', 'romangie'),
+				'before_widget' => '<div id="%1$s" class="widget %2$s">',
+				'after_widget' => '</div>',
+				'before_title' => '<h4 class="widget-title">',
+				'after_title' => '</h4>'
+			)
+		);
+		// Register top left video widget
+		register_sidebar(
+			array(
+				'id' => 'lefttopvideo',
+				'name' => __('Top left video', 'romangie'),
+				'description' => __( 'This is the widget area for the left of top part of the Video', 'romangie'),
+				'before_widget' => '<div id="%1$s" class="widget %2$s">',
+				'after_widget' => '</div>',
+				'before_title' => '<h4 class="widget-title">',
+				'after_title' => '</h4>'
+			)
+		);
+		// Register top middle video widget
+		register_sidebar(
+			array(
+				'id' => 'middletopvideo',
+				'name' => __('Top Middle Video', 'romangie'),
+				'description' => __( 'This is the widget area for the middle of top part of the Video', 'romangie'),
+				'before_widget' => '<div id="%1$s" class="widget %2$s">',
+				'after_widget' => '</div>',
+				'before_title' => '<h4 class="widget-title">',
+				'after_title' => '</h4>'
+			)
+		);
+		// Register top right video widget
+		register_sidebar(
+			array(
+				'id' => 'righttopvideo',
+				'name' => __('Top Right Video', 'romangie'),
+				'description' => __( 'This is the widget area for the right of top part of the Video', 'romangie'),
+				'before_widget' => '<div id="%1$s" class="widget %2$s">',
+				'after_widget' => '</div>',
+				'before_title' => '<h4 class="widget-title">',
+				'after_title' => '</h4>'
+			)
+		);
+		// Register bottom left video widget
+		register_sidebar(
+			array(
+				'id' => 'leftbottomvideo',
+				'name' => __('Bottom Left Video', 'romangie'),
+				'description' => __( 'This is the widget area for the left of bottom part of the Video', 'romangie'),
+				'before_widget' => '<div id="%1$s" class="widget %2$s">',
+				'after_widget' => '</div>',
+				'before_title' => '<h4 class="widget-title">',
+				'after_title' => '</h4>'
+			)
+		);
+		// Register bottom middle video widget
+		register_sidebar(
+			array(
+				'id' => 'middlebottomvideo',
+				'name' => __('Bottom middle Video', 'romangie'),
+				'description' => __( 'This is the widget area for the middle of bottom part of the Video', 'romangie'),
+				'before_widget' => '<div id="%1$s" class="widget %2$s">',
+				'after_widget' => '</div>',
+				'before_title' => '<h4 class="widget-title">',
+				'after_title' => '</h4>'
+			)
+		);
+		// Register bottom right video widget
+		register_sidebar(
+			array(
+				'id' => 'rightbottomvideo',
+				'name' => __('Bottom Right Video', 'romangie'),
+				'description' => __( 'This is the widget area for the right of bottom part of the Video', 'romangie'),
+				'before_widget' => '<div id="%1$s" class="widget %2$s">',
+				'after_widget' => '</div>',
+				'before_title' => '<h4 class="widget-title">',
+				'after_title' => '</h4>'
+			)
+		);
+		// Register Home Slider video widget
+		register_sidebar(
+			array(
+				'id' => 'homeslidervideo',
+				'name' => __('Home Slider Video', 'romangie'),
+				'description' => __( 'This is the widget area for the home part of the Video', 'romangie'),
+				'before_widget' => '<div id="%1$s" class="widget %2$s">',
+				'after_widget' => '</div>',
+				'before_title' => '<h4 class="widget-title">',
+				'after_title' => '</h4>'
+			)
+		);
+		// Register SideBar Event  widget
+		register_sidebar(
+			array(
+				'id' => 'mainsidebarevent',
+				'name' => __('Sidebar Event', 'romangie'),
+				'description' => __( 'This is the widget area for the sidebar part of the event', 'romangie'),
+				'before_widget' => '<div id="%1$s" class="widget %2$s">',
+				'after_widget' => '</div>',
+				'before_title' => '<h4 class="widget-title">',
+				'after_title' => '</h4>'
+			)
+		);
+		
 	}	
 
 	add_action( 'widgets_init', 'romangie_register_sidebar');
