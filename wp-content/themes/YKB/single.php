@@ -63,7 +63,7 @@
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<div class="devotion-content">
 					<div id="img-content-top"class="col-md-14 img-devotion-content-top">
-						<img src="<?php bloginfo('template_url'); ?>/images/mountain.jpg" class="img-devotion-main">
+						<img src="<?php bloginfo('template_url'); ?>/images/devotion/<?php echo $name;?>.jpg" class="img-devotion-main">
 					</div>
 					<div class="devotion-content-top">
 						<div class="row">

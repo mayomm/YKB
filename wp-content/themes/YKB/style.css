@@ -1160,6 +1160,7 @@ font-size:60px;
 	margin-bottom:30px;
 }
 .buttom-excerpt{
+	margin-top:20px;
 	float:right;
 }
 
@@ -1306,6 +1307,170 @@ hr {
 .paragraf-content{
 	margin-left:20px;
 }
-
-
 /* event stop*/
+
+/* Home start*/
+.devotion-top-img-home{
+	margin-left:15px;
+}
+.devotion-top-img{
+	text-align:right;
+}
+.devotion-top-img img{
+	height:130px;
+	width:130px;
+}
+.devotion-top-title{
+	margin-top:35px;
+	text-align:left;
+}
+.devotion-top-title-1{
+	margin-top:10px;
+}
+.devotion-thumbnail img{
+	height:200px;
+	width:100%;
+}
+.home-title-devotion-main{
+	margin-bottom:20px;
+}
+.date-today{
+	color:green;
+}
+.img-devotion-content-home{
+	margin-left:-20px;
+	margin-right:-20px;
+}
+.devotion-content-home{
+	margin-top:15px;
+}
+.devotion-content-home-1{
+	margin-top:20px;
+}
+/*renungan keluarga dan kaum muda*/
+.buttom-excerpt-1{
+	margin-top:20px;
+	margin-bottom:30px;
+	float:right;
+}
+.excerpt-link-1 {
+	color:white;
+	font-size:13px;
+	margin-top: 2px;
+	margin-left: 10px;
+}
+.more-link-1 {
+	border: 1px solid #bbb;
+	border-radius: 6px;
+	font-size: 14px;
+	background: #f9f9f9;
+	padding: 10px 20px;
+	display: inline-block;
+}
+.more-link-1 {
+	padding: 3px 15px;
+	margin-top: 10px;
+	background:blue;
+}
+/*renungan anak2*/
+.buttom-excerpt-2{
+	margin-top:20px;
+	margin-bottom:30px;
+	float:right;
+}
+.excerpt-link-2 {
+	color:black;
+	font-size:13px;
+	margin-top: 2px;
+	margin-left: 10px;
+}
+.more-link-2 {
+	border: 1px solid #bbb;
+	border-radius: 6px;
+	font-size: 14px;
+	background: #f9f9f9;
+	padding: 10px 20px;
+	display: inline-block;
+}
+.more-link-2 {
+	padding: 3px 15px;
+	margin-top: 10px;
+	background:green;
+}
+/*renungan umum*/
+.buttom-excerpt-3{
+	margin-top:20px;
+	margin-bottom:30px;
+	float:right;
+}
+.excerpt-link-3 {
+	color:green;
+	font-size:13px;
+	margin-top: 2px;
+	margin-left: 10px;
+}
+.more-link-3 {
+	border: 1px solid #bbb;
+	border-radius: 6px;
+	font-size: 14px;
+	background: #f9f9f9;
+	padding: 10px 20px;
+	display: inline-block;
+}
+.more-link-3 {
+	padding: 3px 15px;
+	margin-top: 10px;
+	background:yellow;
+}
+/*renungan remaja*/
+.buttom-excerpt-4{
+	margin-top:20px;
+	margin-bottom:30px;
+	float:right;
+}
+.excerpt-link-4 {
+	color:white;
+	font-size:13px;
+	margin-top: 2px;
+	margin-left: 10px;
+}
+.more-link-4 {
+	border: 1px solid #bbb;
+	border-radius: 6px;
+	font-size: 14px;
+	background: #f9f9f9;
+	padding: 10px 20px;
+	display: inline-block;
+}
+.more-link-4 {
+	padding: 3px 15px;
+	margin-top: 10px;
+	background:blue;
+}
+/*renungan lansia*/
+.buttom-excerpt-5{
+	margin-top:20px;
+	margin-bottom:30px;
+	float:right;
+}
+.excerpt-link-5 {
+	color:green;
+	font-size:13px;
+	margin-top: 2px;
+	margin-left: 10px;
+}
+.more-link-5{
+	border: 1px solid #bbb;
+	border-radius: 6px;
+	font-size: 14px;
+	background: #f9f9f9;
+	padding: 10px 20px;
+	display: inline-block;
+}
+.more-link-5 {
+	padding: 3px 15px;
+	margin-top: 10px;
+	background:red;
+}
+
+/* home stop*/

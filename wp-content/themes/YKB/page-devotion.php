@@ -11,7 +11,7 @@ get_header(); ?>
 		  <div class="row">
 			<div class="col-sm-4 col-md-3 sidebar margin-devotion-sidebar">
 			  <ul class="nav nav-sidebar">
-				<li class="sidebar-font-top"><span>DEVOTION</span></li>
+				<li class="sidebar-font-top"><span>DEVOTION </span></li>
 				<li class="sidebar-background"><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/1.jpg" width="40px" height="40px" class="img-circle img-navbar"><small> Renungan Keluarga </small></a></li>
 				<li class="sidebar-background"><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/1.jpg" width="40px" height="40px" class="img-circle img-navbar"><small> Renungan Pemuda </small></a></li>
 				<li class="sidebar-background"><a href="#"><img src="<?php bloginfo('template_url'); ?>/images/1.jpg" width="40px" height="40px" class="img-circle img-navbar"><small> Renungan Anak </small></a></li>
