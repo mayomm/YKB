@@ -1,5 +1,11 @@
-<?php get_header(); ?>
-<?php session_start();?>
+<?php
+/*
+Template Name: Page Renungan Umum
+*/
+get_header(); ?>
+<?php session_start();
+	$_SESSION["devotion"]="Renungan Umum";
+?>
 	<div id="content" class="content-area col-sm-12 col-md-12">
 		<div class="container-fluid">
 		  <div class="row">
@@ -15,16 +21,27 @@
 			  </ul>
 		  </div>
 			<div class="col-md-7 main content-devotion-background ">
-				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-				<?php foreach(get_the_category() as $category){
-					$archive=$category->name;
-					
-				}
+			<?php
+					$today = getdate();
+					$args = array(
+						'date_query' => array(
+							array(
+								'year'  => $today['year'],
+								'month' => $today['mon'],
+								'day'   => $today['mday'],
+							),
+						),
+						'category_name' => 'Renungan Umum',
+					);
+				// The Query
+				query_posts( $args );
+
+				// The Loop
 				?>
-				<?php if($archive==$_SESSION["devotion"]):?>
+				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<div class="devotion-content">
 					<div id="img-content-top"class="col-md-14 img-devotion-content-top">
-						<img src="<?php bloginfo('template_url'); ?>/images/devotion/<?php echo $archive;?>.jpg" class="img-devotion-main">
+						<img src="<?php bloginfo('template_url'); ?>/images/devotion/Renungan Umum.jpg" class="img-devotion-main">
 					</div>
 					<div class="devotion-content-top">
 						<div class="row">
@@ -45,18 +62,17 @@
 					<?php the_content(); ?>
 					</div>
 				</div>
-				<?php endif;?>
-				<?php 
-					endwhile; ?>
+				<?php endwhile; ?>
 					<?php else : ?>
 						<h2>Not Found</h2>
 					<?php endif; 
+					wp_reset_query();
 					?>
 			</div>
 			<div class="col-md-2 col-sm-4 ">
 				<?php dynamic_sidebar( 'rightdevotion' ); ?>
 			</div>
 		</div>
-		</div>	
+		</div>			
 	</div>
 <?php get_footer(); ?>

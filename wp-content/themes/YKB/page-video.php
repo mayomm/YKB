@@ -3,6 +3,10 @@
 Template Name: Page Video
 */
 get_header(); ?>
+	<?php 
+	session_start();
+	$_SESSION['ASDF']='VIDEO';
+	?>
 	<div id="content" class="content-area col-sm-12 col-md-12">
 		<img class="image-custom-1<?php the_ID(); ?>" src="http://localhost/YKB/wp-content/uploads/2015/08/wp_2560.jpg" alt="wp_2560" width="2560" height="1440" />
 		<div class="font-wrap">
@@ -34,6 +38,7 @@ get_header(); ?>
 		<div class="col-md-12">
 			<?php dynamic_sidebar('homeslidervideo'); ?>
 			<?php echo do_shortcode('[slidercc id="228"]'); ?>
+			<?php echo do_shortcode('[wonderplugin_carousel id="1"]'); ?>
 		</div>
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<div class="row content">

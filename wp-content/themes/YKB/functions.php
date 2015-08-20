@@ -83,7 +83,24 @@
 
 	/* Custom Continue Reading Link */
 	function romangie_new_excerpt_more( $romangie_more ) {
-		return '<div class="buttom-excerpt'.get_the_ID().'"> <a class="more-link excerpt-link" href="'. get_permalink( get_the_ID() ) . '">' . __('READ MORE', 'romangie') . '</a> </div>';
+		foreach(get_the_category() as $category){
+			$name=$category->name;
+		}
+		if($name=='event'||$name=='news'){
+		return '<div class="buttom-excerpt"> <a class="more-link excerpt-link" href="'. get_permalink( get_the_ID() ) . '">' . __('READ MORE', 'romangie') . '</a> </div>';
+		}else{
+			if($name=='Renungan Anak'){
+				return '<div class="buttom-excerpt-2"> <a class="more-link-2 excerpt-link-2" href="'. get_permalink( get_the_ID() ) . '">' . __('READ MORE', 'romangie') . '</a> </div>';
+			}elseif($name=='Renungan Umum'){
+				return '<div class="buttom-excerpt-3"> <a class="more-link-3 excerpt-link-3" href="'. get_permalink( get_the_ID() ) . '">' . __('READ MORE', 'romangie') . '</a> </div>';
+			}elseif($name=='Renungan Remaja'){
+				return '<div class="buttom-excerpt-4"> <a class="more-link-4 excerpt-link-4" href="'. get_permalink( get_the_ID() ) . '">' . __('READ MORE', 'romangie') . '</a> </div>';
+			}elseif($name=='Renungan Lansia'){
+				return '<div class="buttom-excerpt-5"> <a class="more-link-5 excerpt-link-5" href="'. get_permalink( get_the_ID() ) . '">' . __('READ MORE', 'romangie') . '</a> </div>';
+			}else{
+				return '<div class="buttom-excerpt-1"> <a class="more-link-1 excerpt-link-1" href="'. get_permalink( get_the_ID() ) . '">' . __('READ MORE', 'romangie') . '</a> </div>';
+			}
+		}
 	}
 	add_filter( 'excerpt_more', 'romangie_new_excerpt_more' );
 
@@ -252,6 +269,18 @@
 				'id' => 'mainsidebarevent',
 				'name' => __('Sidebar Event', 'romangie'),
 				'description' => __( 'This is the widget area for the sidebar part of the event', 'romangie'),
+				'before_widget' => '<div id="%1$s" class="widget %2$s">',
+				'after_widget' => '</div>',
+				'before_title' => '<h4 class="widget-title">',
+				'after_title' => '</h4>'
+			)
+		);
+		// Register SideBar News  widget
+		register_sidebar(
+			array(
+				'id' => 'mainsidebarnews',
+				'name' => __('Sidebar News', 'romangie'),
+				'description' => __( 'This is the widget area for the sidebar part of the News', 'romangie'),
 				'before_widget' => '<div id="%1$s" class="widget %2$s">',
 				'after_widget' => '</div>',
 				'before_title' => '<h4 class="widget-title">',

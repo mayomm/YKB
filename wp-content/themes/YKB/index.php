@@ -12,7 +12,6 @@
 <div class="container">
 	<div class="row">
 			<div class="<?php echo $romangie_left_col_class; ?>">
-
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					<?php $romangie_countComments = wp_count_comments(get_the_ID()); ?>
 						<div id="post-<?php the_ID(); ?>" <?php post_class('row post-roll'); ?>>
