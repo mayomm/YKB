@@ -7,7 +7,7 @@ get_header(); ?>
 	$_SESSION["devotion"]="Renungan Anak";
 ?>
 	<div id="content" class="content-area col-sm-12 col-md-12">
-		<div class="container-fluid">
+		<div class="container">
 		  <div class="row">
 			<div class="col-sm-4 col-md-3 sidebar margin-devotion-sidebar">
 			  <ul class="nav nav-sidebar">

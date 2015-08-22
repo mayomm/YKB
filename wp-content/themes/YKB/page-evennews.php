@@ -7,7 +7,7 @@ get_header(); ?>
 		<div class="img-top">
 			<img src="<?php bloginfo('template_url'); ?>/images/footer/bromo1.jpg" class="image-custom" />
 		</div>
-		<div class="container-fluid">
+		<div class="container">
 		  <div class="row">
 			<div class="col-sm-4 col-md-3 sidebaren margin-devotion-sidebar">
 			  <ul class="nav nav-sidebaren">

@@ -7,6 +7,7 @@ get_header(); ?>
 		<?php session_start();
 	$_SESSION["devotion"]="Renungan Keluarga";
 ?>
+	<div class="container">
 		  <div class="row ">
 			<div class="col-md-4 main content-devotion-background background-color-a">
 			<?php
@@ -393,6 +394,7 @@ get_header(); ?>
 					?>
 			</div>
 			
+		</div>
 		</div>	
 	</div>
 <?php get_footer(); ?>
