@@ -81,13 +81,13 @@ nav {
 }
 
 a {
-	color: #b12930;
+	color: #black;
 	text-decoration: none;
 }
 
 a:hover, a:active {
 	text-decoration: none;
-	color: #b12930;
+	color: #black;
 }
 
 /*
@@ -1118,6 +1118,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', end
 .sidebar-deviotion-margin{
 	margin-top: 35px;
 }
+
 .ribbon {
   width: 200px;
   height: 40px;
@@ -1241,6 +1242,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', end
  */
 
 /* Hide for mobile, show later */
+.asd{
+  display: none;
+}
+@media (min-width: 992px) {
+  .asd {
+	width:auto;
+    z-index: 1000;
+    display: block;
+  }
+}
+
 .sidebar {
   display: none;
 }
@@ -1278,7 +1290,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', end
 .nav-sidebar > .active > a:hover,
 .nav-sidebar > .active > a:focus {
   color: #fff;
-  background-color: #428bca;
+  background-color: #808080;
+}
+
+.rightbar-devotion {
+	font-size: 12px;
+	color: black;
 }
 
 .img-navbar{
@@ -1286,8 +1303,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', end
 }
 
 .margin-devotion-sidebar{
-	margin-top: -10px;
-	margin-left:10px;
+	margin-top: -12px;
+	margin-left:15px;
 }
 .margin-devotion-main{
 	margin-left:20px;
@@ -1669,3 +1686,92 @@ hr {
 }
 
 /* home stop*/
+/* kursus start*/
+.kursus-contain-title{
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+.kursus-contain{
+	margin-left:20px ;
+}
+.kursus-contain img{
+	width: 100%;
+	height: 350px;
+	margin-bottom: 20px;
+}
+
+.sidebarin h4 ,.sidebarin label, .sidebarin caption, .comments-title {
+	color: #444;
+	font-size: 18px;
+	margin-bottom: 10px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.sidebarin li {
+	padding:0 0 0 0;
+	border-bottom: 2px solid transparent;
+	text-align: center;
+}
+
+.sidebarin li a {
+	line-height: 10px;
+	background:white;
+}
+
+.sidebarin input[type="text"] {
+	width: 100%;
+}
+
+.sidebarin {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebarin {
+    top: 0;
+    bottom: 0;
+    left: 0;
+	width:200px;
+    z-index: 1000;
+    display: block;
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+	background-color:#FFFFFF;
+	border-top: 2px solid #aaa;
+	border-right: 2px solid #aaa;
+	border-left: 2px solid #aaa;
+	border-bottom: 2px solid #aaa;
+	font-size: 13px;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebarin {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: -10px;
+  margin-left: -20px;
+}
+.nav-sidebarin  > li > a  {
+	min-height   : 20px;
+	padding-right: 20px;
+	padding-left : 20px;
+}
+.nav-sidebarin > .active > a,
+.nav-sidebarin > .active > a:hover,
+.nav-sidebarin > .active > a:focus {
+  color: #fff;
+  background-color: #808080;
+}
+.title-sidebar-informasi{
+	line-height: 30px;
+	margin-bottom: -5px;
+}
+.lastchild-sidebar-in{
+	border-top: 2px solid #aaa; 
+	margin-top: -2px;
+	margin-bottom: -2px;
+	line-height: 15px;
+}
+/* kursus stop*/
+

@@ -272,12 +272,12 @@ textarea {
     line-height: inherit
 }
 a {
-    color: #428bca;
+    color: black;
     text-decoration: none
 }
 a:hover,
 a:focus {
-    color: #428bca;
+    color: black;
     text-decoration: underline
 }
 a:focus {
@@ -3624,12 +3624,14 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .nav>li>a {
     position: relative;
     display: block;
+    color: black;
     padding: 10px 15px
 }
 .nav>li>a:hover,
 .nav>li>a:focus {
     text-decoration: none;
-    background-color: #eee
+    color:white;
+    background-color: #808080
 }
 .nav>li.disabled>a {
     color: #999

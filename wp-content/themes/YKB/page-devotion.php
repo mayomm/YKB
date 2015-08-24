@@ -6,7 +6,8 @@ get_header(); ?>
 <div class="margin-devotion-top">
 	<div id="content" class="content-area col-sm-12 col-md-12 ">
 		<?php session_start();
-	$_SESSION["devotion"]="Renungan Keluarga";
+	$_SESSION["devotion"]='8';
+	$_SESSION["devotionname"]="Renungan Keluarga";
 ?>
 		<div id="img-content-top" class="img-devtion-top img-devotion-content-top">
 			<img src="<?php bloginfo('template_url'); ?>/images/devotion/Renungan Keluarga.jpg">
@@ -15,10 +16,12 @@ get_header(); ?>
 		  <div class="row">		
 			<div class="col-sm-5 col-md-3 ">
 				<div class="sidebar-deviotion-margin">
+					<div class="asd">
 					<div class ="ribbon">
 						Renungan
 						<i></i>
 						<i></i>
+					</div>
 					</div>
 					<div class="margin-devotion-sidebar">
 					<div class="sidebar">
@@ -44,7 +47,7 @@ get_header(); ?>
 								'day'   => $today['mday'],
 							),
 						),
-						'category_name' => 'Renungan Keluarga',
+						'cat' => '8',
 					);
 				// The Query
 				query_posts( $args );
@@ -85,11 +88,24 @@ get_header(); ?>
 				<div>
 					<?php dynamic_sidebar( 'rightdevotion' ); ?>
 				</div>
-				<div style="color:red">
-					<p>kdfsdlfksdkf</p></br>
-					<p>kdfsdlfksdkf</p></br>
-					<p>kdfsdlfksdkf</p></br>
-					<p>kdfsdlfksdkf</p></br>
+				<div style="">
+					<address class="rightbar-devotion">
+					<p>Pengganti ongkos cetak dan biaya pengiriman:</p>
+					<P>Rp. 65.000,-/tahun</P>
+					<P>Rp. 7.500,-/eksemplar</P></br>
+					<p>Pembayaran melalui:</p>
+					<p>Bank Mandiri - Jakarta, Kelapa Dua</p>
+					<p>A/C No. 165 0000 558743</p>
+					<p>a.n. Yayasan Komunikasi Bersama</p>
+					<p>Marketing</p></br>
+					<p><strong>BCA Bidakara</strong></p>
+					<p>A/C No. 450 558 9999</p>
+					<p>a.n. Yayasan Komunikasi Bersama</p></br>
+					<p>Persembahan Kasih melalui:</p>
+					<p><strong>BCA Bidakara</strong></p>
+					<p>A/C No. 450 305 2990</p>
+					<p>a.n. Yayasan Komunikasi Bersama</p>
+					</address>
 				</div>
 			</div>
 		</div>
