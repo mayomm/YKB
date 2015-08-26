@@ -9,20 +9,18 @@ Version: 4.1.0
 	line-height: 18px;
 }
 .cat-post-title {
-	font-family: Andalus, Helvetica, sans-serif;
 	font-size: 20px;	
 }
 .cat-post-current a {
 	font-weight: bold;
 	text-transform: uppercase;
 }
-.cat-post-date {
-	font-family: Trajan pro, Helvetica, sans-serif;
+.cat-post-date strong {
 	font-size: 20px;
 	margin-bottom: 10px;
 }
 a.cat-post-thumbnail img {
-	height:200px;
+	height:150px;
 	width:100%;
 	box-shadow: 4px 0px 10px #888;
 }

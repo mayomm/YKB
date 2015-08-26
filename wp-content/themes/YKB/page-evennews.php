@@ -3,50 +3,61 @@
 Template Name: Page Even News
 */
 get_header(); ?>
-	<div id="content" class="content-area col-sm-12 col-md-12">
-		<div class="img-top">
-			<img src="<?php bloginfo('template_url'); ?>/images/footer/bromo1.jpg" class="image-custom" />
+<div class="margin-information">
+	<div id="content" class="content-area col-sm-12 col-md-12 ">
+		<div id="img-content-top" class="img-devtion-top img-devotion-content-top">
+			<img src="<?php bloginfo('template_url'); ?>/images/information/gruposp.jpg">
 		</div>
-		<div class="container">
-		  <div class="row">
-			<div class="col-sm-4 col-md-3 sidebaren margin-devotion-sidebar">
-			  <ul class="nav nav-sidebaren">
-				<h4>EVENT & NEWS</h4>
-				<li class="sidebar-background"><a href="#"> EVENT </a></li>
-				<li class="sidebar-background"><a href="#"> NEWS </a></li>
-			  </ul>
-			</div>
-			<div class="row">
-				<div class="col-sm-7 col-md-9 main content-devotion-background">
-					<div class="col-md-12 col-sm-11">
-						<div class="title-main-box-en">
-							<h4>EVENT</h4>
+		<div class="">
+		  <div class="row">		
+		  	<div class="asd">
+				<div class="col-sm-5 col-md-3 ">
+					<div class="sidebar-deviotion-margin">
+						<div class="asd">
+							<div class ="ribbon">
+								PELAYANAN
+								<i></i>
+								<i></i>
+							</div>
 						</div>
-						<div id="style-4" class=" main-scroll ">
-							<?php dynamic_sidebar('mainsidebarevent'); ?>
+						<div class="margin-devotion-sidebar">
+							<div class="sidebarin">
+							  <ul class="nav nav-sidebarin">
+								<li class="title-sidebar-informasi"> INFORMASI </li>
+								<li class=""><a href="<?php get_site_url();?>kursus"><div class="glyphicon glyphicon-ok"></div> <span>Kursus Alkitab Tertulis</span>  </a></li>
+								<li class=""><a href="<?php get_site_url();?>komunitas-pendengar"><div class="glyphicon glyphicon-ok"></div> <span>Komusitas Pendengar</span>  </a></li>
+								<li class=""><a href="<?php get_site_url();?>global-coffee-break"><div class="glyphicon glyphicon-ok"></div> <span>Global Coffee Break</span>  </a></li>
+								<li class=""><a href="<?php get_site_url();?>event" class="lastchild-sidebar-in"> KEGIATAN </a></li>
+							  </ul>
+							 </div>
 						</div>
+			  		</div>
+		  		</div>
+		  	</div>	
+			<div class="col-md-9 main content-devotion-background ">
+				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+				<div class="devotion-content">
+					<div class="row">
+					<div class="kursus-contain">
+					<div class="col-md-10">
+
+						<div class="margin-main-information-kegiatan">
+							<div class=" main-scroll ">
+								<?php dynamic_sidebar('mainsidebarevent'); ?>
+							</div>
+						</div>
+					</div>
 					</div>
 				</div>
 				</div>
+				<?php endwhile; ?>
+					<?php else : ?>
+						<h2>Not Found</h2>
+					<?php endif; 
+					?>
 			</div>
 		</div>
-		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-			<div class="row content">
-
-				<div class="post col-md-12" id="post-<?php the_ID(); ?>">	
-					<div class="entry">
-
-						<?php the_content(); ?>
-
-						<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
-
-					</div>
-
-				</div>
-			</div>
-			
-			<?php //comments_template(); ?>
-
-			<?php endwhile; endif; ?>
+		</div>
 	</div>
+</div>
 <?php get_footer(); ?>

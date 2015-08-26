@@ -53,9 +53,9 @@ $paramssld["ht_view2_popup_linkbutton_background_hover_color"] = "c02121";
 $paramssld["ht_view2_popup_linkbutton_background_color"] = "FF2C2C";
 $paramssld["ht_view2_popup_linkbutton_font_hover_color"] = "ffffff";
 $paramssld["ht_view2_popup_linkbutton_color"] = "ffffff";
-$paramssld["ht_view2_popup_linkbutton_font_size"] = "12";
+$paramssld["ht_view2_popup_linkbutton_font_size"] = "14";
 $paramssld["ht_view2_description_color"] = "222222";
-$paramssld["ht_view2_description_font_size"] = "12";
+$paramssld["ht_view2_description_font_size"] = "14";
 $paramssld["ht_view2_show_description"] = "on";
 $paramssld["ht_view2_thumbs_width"] = "75";
 $paramssld["ht_view2_thumbs_height"] = "75";
@@ -63,12 +63,12 @@ $paramssld["ht_view2_thumbs_position"] = "before";
 $paramssld["ht_view2_show_thumbs"] = "on";
 $paramssld["ht_view2_popup_background_color"] = "000000";
 $paramssld["ht_view2_popup_overlay_color"] = "000000";
-$paramssld["ht_view2_popup_overlay_transparency_color"] = "80";
+$paramssld["ht_view2_popup_overlay_transparency_color"] = "95";
 $paramssld["ht_view2_popup_closebutton_style"] = "white";
 $paramssld["ht_view2_show_separator_lines"] = "on";
-$paramssld["ht_view2_show_popup_title"] = "on";
+$paramssld["ht_view2_show_popup_title"] = "off";
 // font tulisan 
-$paramssld["ht_view2_element_title_font_size"] = "12";
+$paramssld["ht_view2_element_title_font_size"] = "15";
 //color font depan 
 $paramssld["ht_view2_element_title_font_color"] = "ffffff";
 $paramssld["ht_view2_popup_title_font_size"] = "18";
@@ -78,12 +78,12 @@ $paramssld["ht_view2_element_overlay_color"] = "00000";
 $paramssld["ht_view2_element_overlay_transparency"] = "70";
 $paramssld["ht_view2_zoombutton_style"] = "youtube";
 $paramssld["ht_view2_element_border_width"] = "1";
-$paramssld["ht_view2_element_border_color"] = "transparant";
+$paramssld["ht_view2_element_border_color"] = "dedede";
 //background merah
-$paramssld["ht_view2_element_background_color"] = "transparant";
+$paramssld["ht_view2_element_background_color"] = "ff0000";
 // lebar dan tinggi 
-$paramssld["ht_view2_element_width"] = "250";
-$paramssld["ht_view2_element_height"] = "150";
+$paramssld["ht_view2_element_width"] = "330";
+$paramssld["ht_view2_element_height"] = "220";
 
 $paramssld["ht_view5_icons_style"] = "dark";
 $paramssld["ht_view5_show_separator_lines"] = "on";
@@ -539,7 +539,7 @@ jQuery(function(){
     $container.hugeitmicro({
       itemSelector : '.element_<?php echo $videogalleryID; ?>',
       masonry : {
-        columnWidth : defaultBlockWidth+50
+        columnWidth : defaultBlockWidth+20
       },
       masonryHorizontal : {
         rowHeight: defaultBlockHeight+20
@@ -644,9 +644,9 @@ jQuery(document).ready(function(){
 		var width=jQuery(window).width();
 		if(width<=767){
 			jQuery('body').scrollTop(0);
-			jQuery('#huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?> .popup-wrapper_<?php echo $videogalleryID; ?> .image-block_<?php echo $videogalleryID; ?> iframe').height(jQuery('body').width()*0.5);
-		}else {jQuery('#huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?> .popup-wrapper_<?php echo $videogalleryID; ?> .image-block_<?php echo $videogalleryID; ?> iframe').height(jQuery('body').width()*0.33);}
-		jQuery('#huge_it_videogallery_pupup_element_'+strid).addClass('active').css({height:height*0.7});
+			jQuery('#huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?> .popup-wrapper_<?php echo $videogalleryID; ?> .image-block_<?php echo $videogalleryID; ?> iframe').height(jQuery('body').width()*0.7);
+		}else {jQuery('#huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?> .popup-wrapper_<?php echo $videogalleryID; ?> .image-block_<?php echo $videogalleryID; ?> iframe').height(jQuery('body').width()*0.35);}
+		jQuery('#huge_it_videogallery_pupup_element_'+strid).addClass('active').css({height:height*0.8});
 		jQuery('#huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?>').addClass('active');
 		
 		return false;
@@ -687,8 +687,8 @@ jQuery(document).ready(function(){
 	width:<?php echo $paramssld['ht_view2_element_width']; ?>px;
 	height:<?php echo $paramssld['ht_view2_element_height']+200; ?>px;
 	margin:0px 0px 10px 0px;
-	background:<?php echo $paramssld['ht_view2_element_background_color']; ?>;
-	border:<?php echo $paramssld['ht_view2_element_border_width']; ?>px solid <?php echo $paramssld['ht_view2_element_border_color']; ?>;
+	background:#<?php echo $paramssld['ht_view2_element_background_color']; ?>;
+	border:<?php echo $paramssld['ht_view2_element_border_width']; ?>px solid #<?php echo $paramssld['ht_view2_element_border_color']; ?>;
 	outline:none;
 }
 
@@ -846,6 +846,7 @@ jQuery(document).ready(function(){
 	list-style:none;
 	z-index:2000;
 	display:none;
+	height:90%;
 	
 }
 
@@ -855,9 +856,8 @@ jQuery(document).ready(function(){
 	position:relative;
 	display:none;
 	width:100%;
-	padding:40px 0px 0px 0px;
-	min-height:550px;
-	max-height:550px;
+	padding:40px 0px 10px 0px;
+	min-height:100%;
 	position:relative;
 	background:#<?php echo $paramssld["ht_view2_popup_background_color"];?>;
 }
@@ -894,28 +894,25 @@ jQuery(document).ready(function(){
 #huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?> li.pupup-element .popup-wrapper_<?php echo $videogalleryID; ?> {
 	position:relative;
 	width:100%;
-	height:470px;
+	height:100%;
 	padding:2% 2% 0% 2%;
-	background: black;
 }
 
 #huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?> .popup-wrapper_<?php echo $videogalleryID; ?> .image-block_<?php echo $videogalleryID; ?> {
 	width:100%;
 	height:100%;
 	position:relative; 
-	min-width:300px;
+	min-width:200px;
 }
 
 #huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?> .popup-wrapper_<?php echo $videogalleryID; ?> .image-block_<?php echo $videogalleryID; ?> img {
 	width:100% !important;
 	display:block;
 }
-/*inti tinggi sama besar video*/
+
 #huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?> .popup-wrapper_<?php echo $videogalleryID; ?> .image-block_<?php echo $videogalleryID; ?> iframe  {
 	width:100% !important;
 	height:100%;
-	min-height: 100%;
-	max-height: 100%; 
 	display:block;
 
 }
@@ -1091,6 +1088,7 @@ jQuery(document).ready(function(){
 
 }
 .title-background{
+	background: #d9d9d9;
 	min-height:500px;
 }
 .title-margin{
@@ -1103,20 +1101,6 @@ jQuery(document).ready(function(){
 	height:40px;
 	background:url('<?php echo  plugins_url( '../images/youtubelogo.png' , __FILE__ ); ?>') center center no-repeat;
 	opacity:1;
-}
-.link-red a{
-	color: red;
-}
-.margin-main{
-	margin-left: 30px;
-}
-.font-size-des{
-	text-align: center;
-	font-size: 13px;
-}
-.title-popup{
-	color:white;
-	margin-left: 20px;
 }
 </style>
 <section id="huge_it_videogallery_content_<?php echo $videogalleryID; ?>">
@@ -1178,15 +1162,10 @@ jQuery(document).ready(function(){
 		$descnohtml=strip_tags($row->description);
 		$result = substr($descnohtml, 0, 50);
 		?>
-		
-		<div class="element_<?php echo $videogalleryID; ?> " tabindex="0" data-symbol="<?php echo $row->name; ?>" data-category="alkaline-earth">
-				<div class ="ribbonvideo">
-						<?php echo $row->name; ?>
-						<i></i>
-						<i></i>
-					</div>
-			<div class="main-video">
-				
+		<div class="element_<?php echo $videogalleryID; ?>" tabindex="0" data-symbol="<?php echo $row->name; ?>" data-category="alkaline-earth">
+			<div class="title-block_<?php echo $videogalleryID; ?>">
+				<h3><?php echo $row->name; ?></h3>
+			</div>
 			<div class="title-background">
 			<div class="image-block_<?php echo $videogalleryID; ?>">
 			<?php 
@@ -1239,21 +1218,18 @@ jQuery(document).ready(function(){
 			
 				<div class="videogallery-image-overlay"><a href="#<?php echo $row->id; ?>"></a></div>
 			</div>
-				<div class="title-margin font-size-des">
+				<div class="title-margin">
+				<?php if($paramssld["ht_view2_show_popup_title"]=='on'){?><h3 class="title"><?php echo $row->name; ?></h3><?php } ?>
 				<?php if($paramssld["ht_view2_show_description"]=='on'){?><div class="description"><?php echo $row->description; ?></div><?php } ?>
 				<?php if($paramssld["ht_view2_show_popup_linkbutton"]=='on'){?>
-					<div class="button-block link-red">
+					<div class="button-block">
 					<a href="<?php echo $link; ?>"  <?php if ($row->link_target=="on"){echo 'target="_blank"';}?>><?php echo $paramssld["ht_view2_popup_linkbutton_text"]; ?></a>
 					</div>
 				<?php } ?>
 				<div style="clear:both;"></div>
 				</div>
 			</div>
-
-			</div>
-
 		</div>	
-
 		<?php
 	}?>
 	<div style="clear:both;"></div>
@@ -1356,7 +1332,7 @@ jQuery(document).ready(function(){
 		if(width<=767){
 			jQuery('body').scrollTop(0);
 			jQuery('#huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?> .popup-wrapper_<?php echo $videogalleryID; ?> .image-block_<?php echo $videogalleryID; ?> iframe').height(jQuery('body').width()*0.5);
-		}else {jQuery('#huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?> .popup-wrapper_<?php echo $videogalleryID; ?> .image-block_<?php echo $videogalleryID; ?> iframe').height(jQuery('body').width()*0.7);}
+		}else {jQuery('#huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?> .popup-wrapper_<?php echo $videogalleryID; ?> .image-block_<?php echo $videogalleryID; ?> iframe').height(jQuery('body').width()*0.23);}
 		jQuery('#huge_it_videogallery_pupup_element_'+strid).addClass('active').css({height:height*0.7});
 		jQuery('#huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?>').addClass('active');
 		
@@ -1385,7 +1361,7 @@ jQuery(document).ready(function(){
 	}
 
 	jQuery(window).resize(function(){
-		jQuery('#huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?> .popup-wrapper_<?php echo $videogalleryID; ?> .image-block_<?php echo $videogalleryID; ?> iframe').height(jQuery('#huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?> .popup-wrapper_<?php echo $videogalleryID; ?> .image-block_<?php echo $videogalleryID; ?>').width()*1);
+		jQuery('#huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?> .popup-wrapper_<?php echo $videogalleryID; ?> .image-block_<?php echo $videogalleryID; ?> iframe').height(jQuery('#huge_it_videogallery_popup_list_<?php echo $videogalleryID; ?> .popup-wrapper_<?php echo $videogalleryID; ?> .image-block_<?php echo $videogalleryID; ?>').width()*0.5);
 	});
 
 	
@@ -1525,9 +1501,6 @@ jQuery(document).ready(function(){
 					?>
 	
 				</div>
-			</div>
-			<div class="title-popup">
-			<?php if($paramssld["ht_view2_show_popup_title"]=='on'){?><h5 class="title"><?php echo $row->name; ?></h5><?php } ?>
 			</div>
 		</li>
 		<?php
@@ -2645,7 +2618,7 @@ jQuery(function(){
         /* Set active thumbnail.*/
 		jQuery(".huge_it_slideshow_dots_videogallery_<?php echo $sliderID; ?>").removeClass("huge_it_slideshow_dots_active_videogallery_<?php echo $sliderID; ?>").addClass("huge_it_slideshow_dots_deactive_videogallery_<?php echo $sliderID; ?>");  
 		jQuery("#huge_it_dots_" + huge_it_current_key_videogallery_<?php echo $sliderID; ?> + "_videogallery_<?php echo $sliderID; ?>").removeClass("huge_it_slideshow_dots_deactive_videogallery_<?php echo $sliderID; ?>").addClass("huge_it_slideshow_dots_active_videogallery_<?php echo $sliderID; ?>");
-        jQuery(".huge_it_slide_bg_videogallery_<?php echo $sliderID; ?>").css('perspective', 10000);
+        jQuery(".huge_it_slide_bg_videogallery_<?php echo $sliderID; ?>").css('perspective', 1000);
         jQuery(current_image_class).css({
           transform : 'translateZ(' + tz + 'px)',
           backfaceVisibility : 'hidden'

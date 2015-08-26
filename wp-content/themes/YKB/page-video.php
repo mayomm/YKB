@@ -15,13 +15,13 @@ get_header(); ?>
 
 		<div class="row">
 			<div class="col-md-4 font-radio">
-				<?php dynamic_sidebar( 'lefttopvideo' ); ?>
+				
 			</div>
 			<div class="col-md-4 font-radio">
-				<?php dynamic_sidebar('middletopvideo'); ?>
+				
 			</div>
 			<div class="col-md-4 font-radio">
-				<?php dynamic_sidebar('righttopvideo');?>
+				
 			</div>
 		</div>
 		<div class="row">

@@ -122,10 +122,10 @@ class CategoryPosts extends WP_Widget {
 				<?php endif; ?>
 				<div class="col-md-8">
 				<?php if ( isset( $instance['date'] ) ) : ?>
-					<p class="post-date <?php if( !isset( $instance['disable_css'] ) ) { echo " cat-post-date"; } ?>">
+					<p class="post-date <?php if( !isset( $instance['disable_css'] ) ) { echo " cat-post-date"; } ?>"><strong>
 					<?php the_time("j M Y"); ?> - <span class="post-title <?php if( !isset( $instance['disable_css'] ) ) { echo " cat-post-title"; } ?>" 
 					href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></span> 
-					
+					</strong>
 					</p>
 				<?php endif; ?>
 				<?php if ( isset( $instance['excerpt'] ) ) : ?>
