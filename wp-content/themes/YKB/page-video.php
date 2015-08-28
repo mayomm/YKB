@@ -14,8 +14,8 @@ get_header(); ?>
 		</div>
 
 		<div class="row">
-			<div class="col-md-4 font-radio">
-				
+			<div class="col-md-12 font-radio" >
+			<?php echo do_shortcode('[wonderplugin_carousel id="1"]'); ?>
 			</div>
 			<div class="col-md-4 font-radio">
 				
@@ -38,7 +38,7 @@ get_header(); ?>
 		<div class="col-md-12">
 			<?php dynamic_sidebar('homeslidervideo'); ?>
 			<?php echo do_shortcode('[slidercc id="228"]'); ?>
-			<?php echo do_shortcode('[wonderplugin_carousel id="1"]'); ?>
+			
 		</div>
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<div class="row content">

@@ -5,9 +5,9 @@ Template Name: Page Gema Kasih Indonesia
 get_header(); ?>
 <div class="margin-information">
 	<div id="content" class="content-area col-sm-12 col-md-12 ">
-		<div id="img-content-top" class="img-devtion-top img-devotion-content-top">
-			<img src="<?php bloginfo('template_url'); ?>/images/tentang kami/mitrakami.jpg">
-		</div>
+		<div class="image-gema">
+      	
+      </div>
 		<div class="">
 		  <div class="row">		
 		  	<div class="asd">
