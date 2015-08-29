@@ -402,9 +402,9 @@ function mejs_media_shortcode($tagName, $atts){
 	// CONTROLS
 	$controls_option = ",features: ['playpause'";
 	if ($progress == 'true')
-		$controls_option .= ",'current','progress'";
+		$controls_option .= ",'progress'";
 	if ($duration == 'true')
-		$controls_option .= ",'duration'";
+		$controls_option .= ",'current','duration'";
 	if ($volume == 'true')
 		$controls_option .= ",'volume'";
 	$controls_option .= ",'tracks'";

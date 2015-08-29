@@ -160,6 +160,62 @@ get_header(); ?>
 			            	<div class="section align-center">
 			            		<h3>PROGRAM RADIO</h3>
 			            	</div>
+			            		<div class="col-md-12">
+			            			<div class="row">
+					            	<div id="myCarousel" class="carousel slide">
+									 <div class="carousel-inner">
+									  <?php 
+									  	$the_query = new WP_Query(array(
+									   	 	'cat' => '19', 
+									    	'posts_per_page' => 1 
+									    )); 
+									   while ( $the_query->have_posts() ) : $the_query->the_post();
+									  ?>
+									   <div class="item active">
+									   		<div class="row">
+									    	<div class="col-md-4">
+									    		<?php the_post_thumbnail('large');?>
+									    	</div>
+									    	<div class="col-md-8">
+										     <h4><?php the_title();?></h4>
+										     <p><?php the_content();?></p>
+									    	</div>
+									    	</div>
+									   </div><!-- item active -->
+									  <?php 
+									   endwhile; 
+									   wp_reset_postdata();
+									  ?>
+									  <?php 
+									   $the_query = new WP_Query(array(
+									    'cat' => '19', 
+									    'posts_per_page' => 5, 
+									    'offset'=>1
+									    )); 
+									   while ( $the_query->have_posts() ) : $the_query->the_post();
+									  ?>
+									   <div class="item ">
+									   		<div class="row">
+									    <div class="col-md-4">
+									    		<?php the_post_thumbnail('large');?>
+									    	</div>
+									    	<div class="col-md-8">
+										     	<div class="asdf">
+										     	<?php the_content();?>
+										     	</div>
+									    	</div>
+									    	</div>
+									   </div><!-- item -->
+									  <?php 
+									   endwhile; 
+									   wp_reset_postdata();
+									  ?>
+									 </div><!-- carousel-inner -->
+									 <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+									 <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+									</div><!-- #myCarousel -->
+								</div>
+							</div>
 		            	</div>
 		            </div>
 		            </div>
@@ -380,6 +436,7 @@ get_header(); ?>
 																			<?php the_time('F jS, Y');?>
 																		</div>
 																		<div>
+																			<?php do_shortcode($content); ?>
 																			<?php the_excerpt(); ?>
 																		</div>
 																		</div>

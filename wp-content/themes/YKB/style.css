@@ -2079,6 +2079,7 @@ hr {
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
 /* video stop*/
 /* Home start*/
 .image-home{
@@ -2540,4 +2541,122 @@ hr {
 }
 /*ribbon video end*/
 /* Home stop*/
+/* radio start*/
+.radio-main-scroll::-webkit-scrollbar {
+ display: none;
+}
+.radio-main-scroll {
+  display: none;
+}
+
+.radio-main-scroll{
+   z-index: 1000;
+   display: block;
+	max-height:770px;
+   overflow-x: hidden;
+   overflow-y: scroll; /* Scrollable contents if viewport is shorter than content. */
+}
+.date-program-radio{
+	color:#016E9E;
+}
+.radio-center{
+	margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+.radio-wrap{
+	border-bottom: 2px solid #F4F4F4;
+}
+.margin-both{
+	margin-bottom: 20px;
+}
+.contact-sidebar{
+	border: 2px solid #AAAAAA;
+    width: 200px;
+    margin-left: 15px;
+}
+.logo-contact{
+	text-align: center;
+}
+.font-contact{
+	font-size: 13px;
+}
+.margin-contact{
+	margin-left: 30px;
+}
+.sidebar-radio h4 ,.sidebar-radio label, .sidebar-radio caption, .comments-title {
+	color: #444;
+	font-size: 18px;
+	margin-bottom: 10px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.sidebar-radio li {
+	padding:0 0 0 0;
+	border-bottom: 2px solid transparent;
+	text-align: left;
+}
+
+.sidebar-radio li a {
+	line-height: 15px;
+	background:white;
+}
+
+.sidebar-radio input[type="text"] {
+	width: 100%;
+}
+
+.sidebar-radio {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar-radio {
+    top: 0;
+    bottom: 0;
+    left: 0;
+	width:200px;
+    z-index: 1000;
+    display: block;
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+	background-color:#FFFFFF;
+	border-top: 2px solid #aaa;
+	border-right: 2px solid #aaa;
+	border-left: 2px solid #aaa;
+	border-bottom: 2px solid #aaa;
+	font-size: 13px;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar-radio {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: -10px;
+  margin-left: -20px;
+}
+.nav-sidebar-radio  > li > a  {
+	min-height   : 20px;
+	padding-right: 20px;
+	padding-left : 20px;
+}
+.nav-sidebar-radio > .active > a,
+.nav-sidebar-radio > .active > a:hover,
+.nav-sidebar-radio > .active > a:focus {
+  color: #fff;
+  background-color: #808080;
+}
+.lastchild-sidebar-radio{
+	border-top: 2px solid #aaa; 
+	margin-top: -2px;
+	margin-bottom: -2px;
+}
+.sidebar-title{
+	padding-left: 20px;
+}
+.asdf{
+	margin-top: 50px;
+}
+/* radio stop*/
 
