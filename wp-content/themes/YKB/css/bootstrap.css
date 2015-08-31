@@ -4098,7 +4098,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
-  background-color: #eeeeee;
+  background-color: #000000;
   border-color: #428bca;
 }
 
@@ -6375,7 +6375,7 @@ button.close {
 }
 
 .carousel-inner {
-  position: relative;
+  position: absolute;
   width: 100%;
   overflow: hidden;
 }

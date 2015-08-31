@@ -40,14 +40,9 @@ get_header(); ?>
 			<?php
 					$today = getdate();
 					$args = array(
-						'date_query' => array(
-							array(
-								'year'  => $today['year'],
-								'month' => $today['mon'],
-								'day'   => $today['mday'],
-							),
-						),
+						
 						'cat' => '8',
+						'post_type' => 'audio',
 					);
 				// The Query
 				query_posts( $args );

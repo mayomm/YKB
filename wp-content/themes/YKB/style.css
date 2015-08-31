@@ -202,7 +202,7 @@ a:hover, a:active {
 }
 
 .menu-item {
-	margin: 0 -2px;
+	margin: 0 ;
 }
 
 .navi-wrap:first-child {
@@ -2580,6 +2580,7 @@ hr {
 }
 .font-contact{
 	font-size: 13px;
+	margin-left: 10px;
 }
 .margin-contact{
 	margin-left: 30px;
@@ -2657,6 +2658,253 @@ hr {
 }
 .asdf{
 	margin-top: 50px;
+}
+.slider-radio{
+	height:250px;
+}
+/* radio slider start*/
+.carousel-radio {
+  position: relative;
+}
+
+.carousel-radio-inner {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-radio-inner > .item {
+  position: relative;
+  display: none;
+  -webkit-transition: 0.6s ease-in-out left;
+          transition: 0.6s ease-in-out left;
+}
+
+.carousel-radio-inner > .item > img,
+.carousel-radio-inner > .item > a > img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  line-height: 1;
+}
+
+.carousel-radio-inner > .active,
+.carousel-radio-inner > .next,
+.carousel-radio-inner > .prev {
+  display: block;
+}
+
+.carousel-radio-inner > .active {
+  left: 0;
+}
+
+.carousel-radio-inner > .next,
+.carousel-radio-inner > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.carousel-radio-inner > .next {
+  left: 100%;
+}
+
+.carousel-radio-inner > .prev {
+  left: -100%;
+}
+
+.carousel-radio-inner > .next.left,
+.carousel-radio-inner > .prev.right {
+  left: 0;
+}
+
+.carousel-radio-inner > .active.left {
+  left: -100%;
+}
+
+.carousel-radio-inner > .active.right {
+  left: 100%;
+}
+
+.carousel-radio-control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.carousel-radio-control.left {
+	left: -70px;
+    top: 80px;
+  background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.0001)));
+  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.5) 0), color-stop(rgba(0, 0, 0, 0.0001) 100%));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+
+.carousel-radio-control.right {
+  right: -70px;
+  top: 80px;
+  left: auto;
+  background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.5)));
+  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0), color-stop(rgba(0, 0, 0, 0.5) 100%));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+
+.carousel-radio-control:hover,
+.carousel-radio-control:focus {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.carousel-radio-control .icon-prev,
+.carousel-radio-control .icon-next,
+.carousel-radio-control .glyphicon-chevron-left,
+.carousel-radio-control .glyphicon-chevron-right {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+}
+
+.carousel-radio-control .icon-prev,
+.carousel-radio-control .glyphicon-chevron-left {
+  left: 50%;
+}
+
+.carousel-radio-control .icon-next,
+.carousel-radio-control .glyphicon-chevron-right {
+  right: 50%;
+}
+
+.carousel-radio-control .icon-prev,
+.carousel-radio-control .icon-next {
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  font-family: serif;
+}
+
+.carousel-radio-control .icon-prev:before {
+  content: '\2039';
+}
+
+.carousel-radio-control .icon-next:before {
+  content: '\203a';
+}
+
+.carousel-radio-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+
+.carousel-radio-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+
+.carousel-radio-indicators .active {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.carousel-radio-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-radio-caption .btn {
+  text-shadow: none;
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-radio-control .glyphicons-chevron-left,
+  .carousel-radio-control .glyphicons-chevron-right,
+  .carousel-radio-control .icon-prev,
+  .carousel-radio-control .icon-next {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: -15px;
+    font-size: 30px;
+  }
+  .carousel-radio-caption {
+    right: 20%;
+    left: 20%;
+    padding-bottom: 30px;
+  }
+  .carousel-radio-indicators {
+    bottom: 20px;
+  }
+
+  .background-contact-radio{
+      background-color: white;
+    min-width: 195px;}
+}
+/* radio slider stop*/
+
+.main-radio-img img{
+    height: 160px;
+    width: 300px;
+    margin-left: 70px;
+    margin-top: 35px;
+}
+.clear-both-main-radio{
+	margin-top: 10px;
+    margin-left: 15px;
+}
+.margin-title-radio-home{
+	margin-left: 20px;
+}
+.radio-audio-main{
+	margin-left: 45px;
+    margin-top: 40px;
+}
+.button-home-radio{
+	margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: right;
+    width: 650px;
 }
 /* radio stop*/
 

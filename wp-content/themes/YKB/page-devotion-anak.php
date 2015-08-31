@@ -35,6 +35,7 @@ get_header(); ?>
 					 </div>
 					</div>
 			  	</div>
+			  	<?php dynamic_sidebar( 'rightdevotion' ); ?>
 		  	</div>	
 			<div class="col-md-7 main content-devotion-background ">
 			<?php

@@ -42,7 +42,8 @@ get_header(); ?>
 							<div class="contact-sidebar">
 								<div class="row">
 									<div class="margin-contact">
-									<div class="col-md-10">
+										<div class="row">
+									<div class="col-md-10 background-contact-radio">
 										<div class="section">
 										<div class="logo-contact">
 											<img src="<?php bloginfo(template_url);?>/images/radio/contact.gif">
@@ -61,6 +62,7 @@ get_header(); ?>
 										</div>
 									</div>
 									</div>
+									</div>
 								</div>
 							</div>
 				  		</div>
@@ -69,6 +71,7 @@ get_header(); ?>
 		  		</div>
 		  	</div>	
 			<div class="col-md-9 main content-devotion-background ">
+			
 				<?php
 					$today = getdate();
 					$args = array(

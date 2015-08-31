@@ -8,6 +8,10 @@
         );
 	}
 	add_action( 'init', 'romangie_register_my_menus' );
+	require_once('wp_bootstrap_navwalker.php');
+	register_nav_menus( array(
+	'primary' => __( 'Primary Menu', 'romangie' ),
+	) );
 
 	// Register scripts
 	function romangie_scripts() {
@@ -77,11 +81,11 @@
     /* Include featured Images in theme */
     add_theme_support( 'post-thumbnails' );
 
-
 	/* Set content Width */
 	if ( ! isset( $content_width ) ) $content_width = 500;
 
 	/* Custom Continue Reading Link */
+	
 	function romangie_new_excerpt_more( $romangie_more ) {
 		
 		return '<div class="buttom-excerpt"> <a class="more-link excerpt-link" href="'. get_permalink( get_the_ID() ) . '">' . __('READ MORE', 'romangie') . '</a> </div>';
@@ -89,7 +93,7 @@
 	}
 	add_filter( 'excerpt_more', 'romangie_new_excerpt_more' );
 
-
+	
 	/* Add the class img-circle to the avatar */
 	function romangie_change_avatar_css($romangie_class) {
 		$romangie_class = str_replace("class='avatar", "class='author_gravatar img-circle", $romangie_class) ;

@@ -162,58 +162,370 @@ get_header(); ?>
 			            	</div>
 			            		<div class="col-md-12">
 			            			<div class="row">
-					            	<div id="myCarousel" class="carousel slide">
-									 <div class="carousel-inner">
-									  <?php 
-									  	$the_query = new WP_Query(array(
-									   	 	'cat' => '19', 
-									    	'posts_per_page' => 1 
-									    )); 
-									   while ( $the_query->have_posts() ) : $the_query->the_post();
-									  ?>
-									   <div class="item active">
-									   		<div class="row">
-									    	<div class="col-md-4">
-									    		<?php the_post_thumbnail('large');?>
-									    	</div>
-									    	<div class="col-md-8">
-										     <h4><?php the_title();?></h4>
-										     <p><?php the_content();?></p>
-									    	</div>
-									    	</div>
-									   </div><!-- item active -->
-									  <?php 
-									   endwhile; 
-									   wp_reset_postdata();
-									  ?>
-									  <?php 
-									   $the_query = new WP_Query(array(
-									    'cat' => '19', 
-									    'posts_per_page' => 5, 
-									    'offset'=>1
-									    )); 
-									   while ( $the_query->have_posts() ) : $the_query->the_post();
-									  ?>
-									   <div class="item ">
-									   		<div class="row">
-									    <div class="col-md-4">
-									    		<?php the_post_thumbnail('large');?>
-									    	</div>
-									    	<div class="col-md-8">
-										     	<div class="asdf">
-										     	<?php the_content();?>
-										     	</div>
-									    	</div>
-									    	</div>
-									   </div><!-- item -->
-									  <?php 
-									   endwhile; 
-									   wp_reset_postdata();
-									  ?>
-									 </div><!-- carousel-inner -->
-									 <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-									 <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
-									</div><!-- #myCarousel -->
+			            			<div class="slider-radio">
+						            	<div id="myCarousel" class="carousel-radio slide">
+										 <div class="carousel-radio-inner">
+										  <?php 
+										  	$the_query = new WP_Query(array(
+										   	 	'cat' => '19', 
+										    	'posts_per_page' => 1 
+										    )); 
+										   while ( $the_query->have_posts() ) : $the_query->the_post();
+										  ?>
+										   <div class="item active">
+										   		<div class="row">
+											    	<div class="col-md-4">
+														<div class="main-radio-img">
+											    			<img src="<?php bloginfo('template_url');?>/images/home/katawasiat.gif">
+											    		</div>	
+											    	</div>
+											    	<div class="col-md-8">
+											    		<div class="row">
+											    			<div class="section">
+											    			<div class="col-md-12">
+											    				<div class="row">
+											    					<div class="clear-both-main-radio">
+													    				<div class="col-md-8">
+													    					<div class="margin-title-radio-home">
+														     					<h4><?php the_title();?></h4>
+														     				</div>
+														     			</div>	
+														     			<div class="col-md-3">
+																			<div class="date-program-radio">
+																				<span><h4><?php echo get_the_date( 'd/m/Y' ); ?></h4></span>
+																			</div>
+																		</div>
+																	</div>
+												     			</div>
+												     		</div>
+												     		</div>
+												     		<div class="section">
+												     		<div class="col-md-12">
+												     			<div class="radio-audio-main">
+												     				<p><?php the_content();?></p>
+												     			</div>
+												     			<div class="button-home-radio"> <a class="more-link-home home-link" href="<?php get_site_url();?>visi-misi">Listen More ></a> </div>
+												     		</div>
+												     		</div>
+												     	</div>
+											    	</div>
+										    	</div>
+										   </div><!-- item active -->
+										  <?php 
+										   endwhile; 
+										   wp_reset_postdata();
+										  ?>
+										  <?php 
+										   $the_query = new WP_Query(array(
+										    'cat' => '20', 
+										    'posts_per_page' => 1, 
+										    'offset'=>1
+										    )); 
+										   while ( $the_query->have_posts() ) : $the_query->the_post();
+										  ?>
+										   <div class="item ">
+										   		<div class="row">
+											    	<div class="col-md-4">
+														<div class="main-radio-img">
+											    			<img src="<?php bloginfo('template_url');?>/images/home/katahariini.gif">
+											    		</div>	
+											    	</div>
+											    	<div class="col-md-8">
+											    		<div class="row">
+											    			<div class="section">
+											    			<div class="col-md-12">
+											    				<div class="row">
+											    					<div class="clear-both-main-radio">
+													    				<div class="col-md-8">
+													    					<div class="margin-title-radio-home">
+														     					<h4><?php the_title();?></h4>
+														     				</div>
+														     			</div>	
+														     			<div class="col-md-3">
+																			<div class="date-program-radio">
+																				<span><h4><?php echo get_the_date( 'd/m/Y' ); ?></h4></span>
+																			</div>
+																		</div>
+																	</div>
+												     			</div>
+												     		</div>
+												     		</div>
+												     		<div class="section">
+												     		<div class="col-md-12">
+												     			<div class="radio-audio-main">
+												     				<p><?php the_content();?></p>
+												     			</div>
+												     			<div class="button-home-radio"> <a class="more-link-home home-link" href="<?php get_site_url();?>visi-misi">Listen More ></a> </div>
+												     		</div>
+												     		</div>
+												     	</div>
+											    	</div>
+										    	</div>
+										   </div><!-- item -->
+										  <?php 
+										   endwhile; 
+										   wp_reset_postdata();
+										  ?>
+										  <?php 
+										   $the_query = new WP_Query(array(
+										    'cat' => '21', 
+										    'posts_per_page' => 1, 
+										    'offset'=>1
+										    )); 
+										   while ( $the_query->have_posts() ) : $the_query->the_post();
+										  ?>
+										   <div class="item ">
+										   		<div class="row">
+											    	<div class="col-md-4">
+														<div class="main-radio-img">
+											    			<img src="<?php bloginfo('template_url');?>/images/home/pedomanhidup.gif">
+											    		</div>	
+											    	</div>
+											    	<div class="col-md-8">
+											    		<div class="row">
+											    			<div class="section">
+											    			<div class="col-md-12">
+											    				<div class="row">
+											    					<div class="clear-both-main-radio">
+													    				<div class="col-md-8">
+													    					<div class="margin-title-radio-home">
+														     					<h4><?php the_title();?></h4>
+														     				</div>
+														     			</div>	
+														     			<div class="col-md-3">
+																			<div class="date-program-radio">
+																				<span><h4><?php echo get_the_date( 'd/m/Y' ); ?></h4></span>
+																			</div>
+																		</div>
+																	</div>
+												     			</div>
+												     		</div>
+												     		</div>
+												     		<div class="section">
+												     		<div class="col-md-12">
+												     			<div class="radio-audio-main">
+												     				<p><?php the_content();?></p>
+												     			</div>
+												     			<div class="button-home-radio"> <a class="more-link-home home-link" href="<?php get_site_url();?>visi-misi">Listen More ></a> </div>
+												     		</div>
+												     		</div>
+												     	</div>
+											    	</div>
+										    	</div>
+										   </div><!-- item -->
+										  <?php 
+										   endwhile; 
+										   wp_reset_postdata();
+										  ?>
+										  <?php 
+										   $the_query = new WP_Query(array(
+										    'cat' => '22', 
+										    'posts_per_page' => 1, 
+										    'offset'=>1
+										    )); 
+										   while ( $the_query->have_posts() ) : $the_query->the_post();
+										  ?>
+										   <div class="item ">
+										   		<div class="row">
+											    	<div class="col-md-4">
+														<div class="main-radio-img">
+											    			<img src="<?php bloginfo('template_url');?>/images/home/rencanaagung.gif">
+											    		</div>	
+											    	</div>
+											    	<div class="col-md-8">
+											    		<div class="row">
+											    			<div class="section">
+											    			<div class="col-md-12">
+											    				<div class="row">
+											    					<div class="clear-both-main-radio">
+													    				<div class="col-md-8">
+													    					<div class="margin-title-radio-home">
+														     					<h4><?php the_title();?></h4>
+														     				</div>
+														     			</div>	
+														     			<div class="col-md-3">
+																			<div class="date-program-radio">
+																				<span><h4><?php echo get_the_date( 'd/m/Y' ); ?></h4></span>
+																			</div>
+																		</div>
+																	</div>
+												     			</div>
+												     		</div>
+												     		</div>
+												     		<div class="section">
+												     		<div class="col-md-12">
+												     			<div class="radio-audio-main">
+												     				<p><?php the_content();?></p>
+												     			</div>
+												     			<div class="button-home-radio"> <a class="more-link-home home-link" href="<?php get_site_url();?>visi-misi">Listen More ></a> </div>
+												     		</div>
+												     		</div>
+												     	</div>
+											    	</div>
+										    	</div>
+										   </div><!-- item -->
+										  <?php 
+										   endwhile; 
+										   wp_reset_postdata();
+										  ?>
+										  <?php 
+										   $the_query = new WP_Query(array(
+										    'cat' => '23', 
+										    'posts_per_page' => 1, 
+										    'offset'=>1
+										    )); 
+										   while ( $the_query->have_posts() ) : $the_query->the_post();
+										  ?>
+										   <div class="item ">
+										   		<div class="row">
+											    	<div class="col-md-4">
+														<div class="main-radio-img">
+											    			<img src="<?php bloginfo('template_url');?>/images/home/pelangikasih.gif">
+											    		</div>	
+											    	</div>
+											    	<div class="col-md-8">
+											    		<div class="row">
+											    			<div class="section">
+											    			<div class="col-md-12">
+											    				<div class="row">
+											    					<div class="clear-both-main-radio">
+													    				<div class="col-md-8">
+													    					<div class="margin-title-radio-home">
+														     					<h4><?php the_title();?></h4>
+														     				</div>
+														     			</div>	
+														     			<div class="col-md-3">
+																			<div class="date-program-radio">
+																				<span><h4><?php echo get_the_date( 'd/m/Y' ); ?></h4></span>
+																			</div>
+																		</div>
+																	</div>
+												     			</div>
+												     		</div>
+												     		</div>
+												     		<div class="section">
+												     		<div class="col-md-12">
+												     			<div class="radio-audio-main">
+												     				<p><?php the_content();?></p>
+												     			</div>
+												     			<div class="button-home-radio"> <a class="more-link-home home-link" href="<?php get_site_url();?>visi-misi">Listen More ></a> </div>
+												     		</div>
+												     		</div>
+												     	</div>
+											    	</div>
+										    	</div>
+										   </div><!-- item -->
+										  <?php 
+										   endwhile; 
+										   wp_reset_postdata();
+										  ?>
+										  <?php 
+										   $the_query = new WP_Query(array(
+										    'cat' => '24', 
+										    'posts_per_page' => 1, 
+										    'offset'=>1
+										    )); 
+										   while ( $the_query->have_posts() ) : $the_query->the_post();
+										  ?>
+										   <div class="item ">
+										   		<div class="row">
+											    	<div class="col-md-4">
+														<div class="main-radio-img">
+											    			<img src="<?php bloginfo('template_url');?>/images/home/seribusatumakna.gif">
+											    		</div>	
+											    	</div>
+											    	<div class="col-md-8">
+											    		<div class="row">
+											    			<div class="section">
+											    			<div class="col-md-12">
+											    				<div class="row">
+											    					<div class="clear-both-main-radio">
+													    				<div class="col-md-8">
+													    					<div class="margin-title-radio-home">
+														     					<h4><?php the_title();?></h4>
+														     				</div>
+														     			</div>	
+														     			<div class="col-md-3">
+																			<div class="date-program-radio">
+																				<span><h4><?php echo get_the_date( 'd/m/Y' ); ?></h4></span>
+																			</div>
+																		</div>
+																	</div>
+												     			</div>
+												     		</div>
+												     		</div>
+												     		<div class="section">
+												     		<div class="col-md-12">
+												     			<div class="radio-audio-main">
+												     				<p><?php the_content();?></p>
+												     			</div>
+												     			<div class="button-home-radio"> <a class="more-link-home home-link" href="<?php get_site_url();?>visi-misi">Listen More ></a> </div>
+												     		</div>
+												     		</div>
+												     	</div>
+											    	</div>
+										    	</div>
+										   </div><!-- item -->
+										  <?php 
+										   endwhile; 
+										   wp_reset_postdata();
+										  ?>
+										  <?php 
+										   $the_query = new WP_Query(array(
+										    'cat' => '25', 
+										    'posts_per_page' => 1, 
+										    'offset'=>1
+										    )); 
+										   while ( $the_query->have_posts() ) : $the_query->the_post();
+										  ?>
+										   <div class="item ">
+										   		<div class="row">
+											    	<div class="col-md-4">
+														<div class="main-radio-img">
+											    			<img src="<?php bloginfo('template_url');?>/images/home/rumahpelangi.gif">
+											    		</div>	
+											    	</div>
+											    	<div class="col-md-8">
+											    		<div class="row">
+											    			<div class="section">
+											    			<div class="col-md-12">
+											    				<div class="row">
+											    					<div class="clear-both-main-radio">
+													    				<div class="col-md-8">
+													    					<div class="margin-title-radio-home">
+														     					<h4><?php the_title();?></h4>
+														     				</div>
+														     			</div>	
+														     			<div class="col-md-3">
+																			<div class="date-program-radio">
+																				<span><h4><?php echo get_the_date( 'd/m/Y' ); ?></h4></span>
+																			</div>
+																		</div>
+																	</div>
+												     			</div>
+												     		</div>
+												     		</div>
+												     		<div class="section">
+												     		<div class="col-md-12">
+												     			<div class="radio-audio-main">
+												     				<p><?php the_content();?></p>
+												     			</div>
+												     			<div class="button-home-radio"> <a class="more-link-home home-link" href="<?php get_site_url();?>visi-misi">Listen More ></a> </div>
+												     		</div>
+												     		</div>
+												     	</div>
+											    	</div>
+										    	</div>
+										   </div><!-- item -->
+										  <?php 
+										   endwhile; 
+										   wp_reset_postdata();
+										  ?>
+										 </div><!-- carousel-inner -->
+										 <a class="left carousel-radio-control" href="#myCarousel" data-slide="prev"><img src="<?php bloginfo('template_url');?>/images/home/left-radio.png"></a>
+										 <a class="right carousel-radio-control" href="#myCarousel" data-slide="next"><img src="<?php bloginfo('template_url');?>/images/home/right-radio.png"></a>
+										</div><!-- #myCarousel -->
+									</div>
 								</div>
 							</div>
 		            	</div>

@@ -1,0 +1,207 @@
+/* CSS Document */
+.multiple_ajax_calendar_widget{ overflow:visible !important;}
+.wp-calendar, .wp-calendar {
+	width: 100%;
+	padding: 0 0;
+	background:#999;
+}
+.widget_calendar #calendar_wrap {
+	margin:0;
+	padding:0;
+}
+.wp-calendar caption, .wp-calendar caption {
+	padding: 0px 5px;
+	font-size:14px;
+	color:#fff;
+	background:#999;
+}
+.wp-calendar th, .wp-calendar td {
+padding: 5px;
+text-align:center;
+background:#999;
+color:#FFF;
+}
+.wp-calendar td a, .wp-calendar td a:link {
+	background:#fff;
+	
+}
+.wp-calendar td, .wp-calendar td { background:transparent; }
+.wp-calendar td, table.wp-calendar th, .wp-calendar td, table.wp-calendar th { padding: 2px 0; }
+.wp-calendar tfoot td, .wp-calendar tfoot td { padding: 0; }
+.wp-calendar .day-events{display:none;
+line-height:1.6;
+text-align:left;
+color:#000;
+text-shadow: 1px 1px 1px #cccccc;
+filter: dropshadow(color=#cccccc, offx=1, offy=1);
+width:200px;
+	position: absolute;
+	z-index:9999;
+	margin:0px 0px 0px -85px;
+	padding:5px;
+	background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
+background: linear-gradient(to bottom, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+-webkit-box-shadow:  0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+        
+        box-shadow:  0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+	border: 2px solid #000000;
+	-webkit-border-radius: 5px;
+border-radius: 5px;
+}
+.day-events:after, .day-events:before {
+	bottom: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.day-events:after {
+	border-color: rgba(237, 237, 237, 0);
+	border-bottom-color: #ededed;
+	border-width: 5px;
+	left: 50%;
+	margin-left: -5px;
+}
+.day-events:before {
+	border-color: rgba(0, 0, 0, 0);
+	border-bottom-color: #000000;
+	border-width: 8px;
+	left: 50%;
+	margin-left: -8px;
+}
+.wp-calendar .day-events a,.wp-calendar .day-events a:link,.wp-calendar .day-events a:visited{
+color:#000 ;
+text-shadow: 1px 1px 1px #cccccc;
+filter: dropshadow(color=#cccccc, offx=1, offy=1);
+display:block;
+}
+.wp-calendar .day-events a:hover{
+color: #999 ;
+text-shadow: 1px 1px 1px #cccccc;
+filter: dropshadow(color=#cccccc, offx=1, offy=1);
+}
+
+/*custom*/
+.cal {
+  display: block;
+  width: 216px;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  background: white;
+}
+.cal a {
+  text-decoration: none;
+}
+.cal caption {
+  display: block;
+  line-height: 23px;
+  font-weight: bold;
+  color: #e2e2e2;
+  text-align: center;
+  text-shadow: 0 -1px black;
+  background: #333;
+  background: rgba(0, 0, 0, 0.35);
+  /*border-top: 1px solid #333;
+  border-bottom: 1px solid #313131;*/
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.04);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.04);
+  font-size: 12px;
+  border-radius: 5px;
+}
+.cal caption a {
+  display: block;
+  line-height: 23px;
+  padding: 0 10px;
+  font-size: 15px;
+  color: #e2e2e2;
+}
+.cal caption a:hover {
+  color: white;
+}
+.cal caption .prev {
+  float: left;
+}
+.cal caption .next {
+  float: right;
+}
+.cal th, .cal td {
+  width: 30px;
+  text-align: center;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.8);
+}
+.cal th:first-child, .cal td:first-child {
+  border-left: 0;
+}
+.cal th {
+    line-height: 20px;
+    font-size: 8px;
+    color: #23282D;
+    text-transform: uppercase;
+    background: #FFFFFF;
+    border-left: 1px solid #f3f3f3;
+}
+.cal td {
+	width: 20px;
+  line-height: 18px;
+  font-size: 11px;
+  font-weight: bold;
+  border-top: 1px solid #c2c2c2;
+  border-left: 1px solid #c2c2c2;
+}
+.cal td a {
+  clear: both;
+  display: block;
+  position: relative;
+  /*width: 20px;
+  line-height: 18px;*/
+  color: black;
+  background-image: -webkit-linear-gradient(top, #eaeaea, #e5e5e5 60%, #d9d9d9);
+  background-image: -moz-linear-gradient(top, #eaeaea, #e5e5e5 60%, #d9d9d9);
+  background-image: -o-linear-gradient(top, #eaeaea, #e5e5e5 60%, #d9d9d9);
+  background-image: linear-gradient(to bottom, #eaeaea, #e5e5e5 60%, #d9d9d9);
+  -webkit-box-shadow: inset 1px 1px rgba(255, 255, 255, 0.5);
+  box-shadow: inset 1px 1px rgba(255, 255, 255, 0.5);
+}
+.cal td a:hover, .cal td.off a {
+  background: #f3f3f3;
+}
+.cal td.off a {
+  color: #b3b3b3;
+}
+.cal td.active a, .cal td a:active {
+  margin: -1px;
+  color: #f3f3f3;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  background: #6dafbf;
+  border: 1px solid #598b94;
+  -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+}
+.cal td.active:first-child a, .cal td:first-child a:active {
+  border-left: 0;
+  margin-left: 0;
+}
+.cal td.active:last-child a, .cal td:last-child a:active {
+  border-right: 0;
+  margin-right: 0;
+}
+.cal tr:last-child td.active a, .cal tr:last-child td a:active {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+.title-tanggal{
+	margin-left: -20px;
+}
+.title-tanggal-1{
+	margin-left: 25px;
+}
