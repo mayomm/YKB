@@ -1,15 +1,19 @@
 <?php wp_footer(); ?>
 <br class="clear" />
 <br class="clear" />
-<div class="siteinfo">
+<div class="siteinfo-footer">
+<div id="content" class="content-area col-sm-12 col-md-12">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
-				<div class="col-md-3">
+			<div class="col-md-12" style="margin-top: 40px;">
+				<div class="row">
+				<div style="margin-left: 80px;">
+				<div class="col-md-3 col-md-offset-1">
 					<address class="text-left font-footer">
-						<h4>ABOUT US</h4><br>
-						<small>Our History & Board Of Director</small><br>
-						<small>Our Vision & Mission</small><br>
+						<h4>TENTANG KAMI</h4><br>
+						<small>Latar Belakang & Susunan Pengurus</small><br>
+						<small>Visi & Misi Kami</small><br>
+						<small>Mitra</small><br>
 					</address>
 					<br>
 					<br>
@@ -22,20 +26,12 @@
 						<small>Jakarta 11071</small><br>
 					</address>
 				</div>
-				<div class="col-md-3 col-md-offset-1">
-					<address class="text-left font-footer">
-						<h4>WHAT'S NEW TODAY</h4><br>
-						<a href=""><small>Wasiat</small></a><br>
-						<a href=""><small>Youth For Christ</small></a><br>
-						<a href=""><small>Kiddy</small></a><br>
-						<a href=""><small>Teen For Christ</small></a><br>
-						<a href=""><small>Rencana Agung</small></a><br>
-						<a href=""><small>Jendela Hati</small></a><br>
-					</address>
+				<div class="col-md-3">
+					<img src="<?php bloginfo('template_url');?>/images/footer/gki.png">
 				</div>
-				<div class="col-md-3 col-md-offset-1 ">
+				<div class="col-md-3">
 					<address class="text-left font-footer">
-						<h4>CONNECT WITH US</h4><br>
+						<h4>HUBUNGI KAMI</h4><br>
 						<small>Telepon:</small><br>
 						<small>+62 21 583 03398/+62 21 583 03498</small><br>
 						<br>
@@ -43,15 +39,15 @@
 						<small>+62 21 583 04664</small><br>
 					</address>
 					<address class="text-left footersos">
-					<a href="" ><img src="<?php bloginfo('template_url'); ?>/images/header/twitter-icon.png" class="img-rounded" height="25px" width="25px"></a> 
-					<a href="" ><img src="<?php bloginfo('template_url'); ?>/images/header/face-icon.png" height="35px" width="35px" class="img-rounded"></a>
+					<a href="https://twitter.com" ><img src="<?php bloginfo('template_url'); ?>/images/header/twitter-icon.png" class="img-rounded" height="25px" width="25px"></a> 
+					<a href="https://facebook.com" ><img src="<?php bloginfo('template_url'); ?>/images/header/face-icon.png" height="35px" width="35px" class="img-rounded"></a>
 					</address>
 				</div>
-			</div>
-			<div class="col-xs-10 col-xs-offset-1" id="">
-			<p><?php printf( __( 'Copyright &copy; %1$s. Powered by <a href="%2$s">WordPress</a> &amp; <a href="%3$s">Romangie Theme</a>.'), date('Y'), 'http://www.wordpress.org/', 'http://themes.tobscore.com/romangie/'); ?></p>
+				</div>
+				</div>
 			</div>
 		</div>
+	</div>
 	</div>
 </div>
 <?php wp_footer(); ?>

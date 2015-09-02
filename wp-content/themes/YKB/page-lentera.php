@@ -4,17 +4,10 @@ Template Name: Page Lentera
 */
 get_header(); ?>
 <div class="margin-information">
+	<div class="image-tv">
+      	<img src="<?php bloginfo('template_url');?>/images/program tv/lentera.png">
+    </div>
 	<div id="content" class="content-area col-sm-12 col-md-12 ">
-		<div class="image-lentera row">
-      	<div class="top-word-lentera">
-	      	<div>
-	      		<p class="top-title-lentera">LENTERA</p>
-	      	</div>
-	            <div class="">
-	               <p class="" style="color: white;">Renewing, Refresing, Inspiring</p>
-	            </div>
-         </div>
-      </div>
 		<div class="">
 		  <div class="row">		
 		  	<div class="asd">

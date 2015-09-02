@@ -4,7 +4,7 @@
 		<?php session_start();
 ?>
 		<div id="img-content-top" class="img-devtion-top img-devotion-content-top">
-			<img src="<?php bloginfo('template_url'); ?>/images/devotion/<?php echo $_SESSION['devotionname']?>.jpg">
+			<img src="<?php bloginfo('template_url'); ?>/images/devotion/<?php echo $_SESSION['devotionname']?>.png">
 		</div>
 		<div class="container">
 		  <div class="row">		
@@ -20,11 +20,11 @@
 					<div class="margin-devotion-sidebar">
 					<div class="sidebar">
 					  <ul class="nav nav-sidebar">
-						<li class="sidebar-background"><a href="#"> WASIAT </a></li>
-						<li class="sidebar-background"><a href="#"> KIDDY </a></li>
-						<li class="sidebar-background"><a href="#"> TEEN FOR CHRIST </a></li>
-						<li class="sidebar-background"><a href="#"> YOUTH FOR CHRIST </a></li>
-						<li class="sidebar-background"><a href="#"> JENDELA HATI </a></li>
+						<li class="sidebar-background"><a href="http://localhost/YKB/wasiat"> WASIAT </a></li>
+						<li class="sidebar-background"><a href="http://localhost/YKB/kiddy"> KIDDY </a></li>
+						<li class="sidebar-background"><a href="http://localhost/YKB/teen-for-christ"> TEEN FOR CHRIST </a></li>
+						<li class="sidebar-background"><a href="http://localhost/YKB/youth-for-christ"> YOUTH FOR CHRIST </a></li>
+						<li class="sidebar-background"><a href="http://localhost/YKB/jendela-hati"> JENDELA HATI </a></li>
 					  </ul>
 					 </div>
 					</div>

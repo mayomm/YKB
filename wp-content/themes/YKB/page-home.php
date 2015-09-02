@@ -3,7 +3,7 @@
 Template Name: Page New Home
 */
 get_header(); ?>
-<div class="">
+<div class="home-top">
 		<?php echo do_shortcode('[image-carousel]'); ?>
     </div>
 	<div id="content" class="content-area col-sm-12 col-md-12">
@@ -204,7 +204,7 @@ get_header(); ?>
 												     			<div class="radio-audio-main">
 												     				<p><?php the_content();?></p>
 												     			</div>
-												     			<div class="button-home-radio"> <a class="more-link-home home-link" href="<?php get_site_url();?>visi-misi">Listen More ></a> </div>
+												     			<div class="button-home-radio"> <a class="more-link-home home-link" href="<?php get_site_url();?>kata-kata-wasiat">Listen More ></a> </div>
 												     		</div>
 												     		</div>
 												     	</div>
@@ -255,7 +255,7 @@ get_header(); ?>
 												     			<div class="radio-audio-main">
 												     				<p><?php the_content();?></p>
 												     			</div>
-												     			<div class="button-home-radio"> <a class="more-link-home home-link" href="<?php get_site_url();?>visi-misi">Listen More ></a> </div>
+												     			<div class="button-home-radio"> <a class="more-link-home home-link" href="<?php get_site_url();?>kata-hari-ini">Listen More ></a> </div>
 												     		</div>
 												     		</div>
 												     	</div>
@@ -306,7 +306,7 @@ get_header(); ?>
 												     			<div class="radio-audio-main">
 												     				<p><?php the_content();?></p>
 												     			</div>
-												     			<div class="button-home-radio"> <a class="more-link-home home-link" href="<?php get_site_url();?>visi-misi">Listen More ></a> </div>
+												     			<div class="button-home-radio"> <a class="more-link-home home-link" href="<?php get_site_url();?>pedoman-hidup">Listen More ></a> </div>
 												     		</div>
 												     		</div>
 												     	</div>
@@ -357,7 +357,7 @@ get_header(); ?>
 												     			<div class="radio-audio-main">
 												     				<p><?php the_content();?></p>
 												     			</div>
-												     			<div class="button-home-radio"> <a class="more-link-home home-link" href="<?php get_site_url();?>visi-misi">Listen More ></a> </div>
+												     			<div class="button-home-radio"> <a class="more-link-home home-link" href="<?php get_site_url();?>rencana-agung">Listen More ></a> </div>
 												     		</div>
 												     		</div>
 												     	</div>
@@ -408,7 +408,7 @@ get_header(); ?>
 												     			<div class="radio-audio-main">
 												     				<p><?php the_content();?></p>
 												     			</div>
-												     			<div class="button-home-radio"> <a class="more-link-home home-link" href="<?php get_site_url();?>visi-misi">Listen More ></a> </div>
+												     			<div class="button-home-radio"> <a class="more-link-home home-link" href="<?php get_site_url();?>pelangi-kasih">Listen More ></a> </div>
 												     		</div>
 												     		</div>
 												     	</div>
@@ -459,7 +459,7 @@ get_header(); ?>
 												     			<div class="radio-audio-main">
 												     				<p><?php the_content();?></p>
 												     			</div>
-												     			<div class="button-home-radio"> <a class="more-link-home home-link" href="<?php get_site_url();?>visi-misi">Listen More ></a> </div>
+												     			<div class="button-home-radio"> <a class="more-link-home home-link" href="<?php get_site_url();?>seribu-satu-makna-pengalaman-hidup">Listen More ></a> </div>
 												     		</div>
 												     		</div>
 												     	</div>
@@ -510,7 +510,7 @@ get_header(); ?>
 												     			<div class="radio-audio-main">
 												     				<p><?php the_content();?></p>
 												     			</div>
-												     			<div class="button-home-radio"> <a class="more-link-home home-link" href="<?php get_site_url();?>visi-misi">Listen More ></a> </div>
+												     			<div class="button-home-radio"> <a class="more-link-home home-link" href="<?php get_site_url();?>rumah-pelangi">Listen More ></a> </div>
 												     		</div>
 												     		</div>
 												     	</div>
@@ -533,8 +533,14 @@ get_header(); ?>
 		            </div>
 	            </div>
 
+		</div>
+	</div>
+</div>
+</div>
+
 
 	            <div id="saatteduh" class="background-white">
+	            <div class="container">
 	            	<div class="margin-close-teduh">
 	            	<div class="section">
 	            	<div class="row">
@@ -952,19 +958,4 @@ get_header(); ?>
 
 
 		  	</div>
-			<div class="col-md-4 main ">
-				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-				<div class="">
-					<div class="">
-					</div>
-				</div>
-				<?php endwhile; ?>
-					<?php else : ?>
-						<h2>Not Found</h2>
-					<?php endif; 
-					?>
-			</div>
-		</div>
-	</div>
-	</div>
 <?php get_footer(); ?>

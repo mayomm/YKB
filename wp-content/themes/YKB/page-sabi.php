@@ -4,17 +4,10 @@ Template Name: Page Sabi
 */
 get_header(); ?>
 <div class="margin-information">
+	<div class="image-tv">
+      	<img src="<?php bloginfo('template_url');?>/images/program tv/sabi.png">
+    </div>
 	<div id="content" class="content-area col-sm-12 col-md-12 ">
-		<div class="image-sabi row">
-      	<div class="top-word-sabi">
-	      	<div>
-	      		<p class="top-title-sabi">SMALL ACT BIG IMPACT (SABI)</p>
-	      	</div>
-	            <div class="">
-	               <p class="">Renewing, Refresing, Inspiring</p>
-	            </div>
-         </div>
-      </div>
 		<div class="">
 		  <div class="row">		
 		  	<div class="asd">

@@ -4,10 +4,10 @@ Template Name: Page Mitra
 */
 get_header(); ?>
 <div class="margin-information">
-	<div id="content" class="content-area col-sm-12 col-md-12 ">
-		<div id="img-content-top" class="img-devtion-top img-devotion-content-top">
-			<img src="<?php bloginfo('template_url'); ?>/images/tentang kami/mitrakami.jpg">
+	<div id="img-content-top" class="image-tentang">
+			<img src="<?php bloginfo('template_url'); ?>/images/tentang kami/top-mitra.png">
 		</div>
+	<div id="content" class="content-area col-sm-12 col-md-12 ">
 		<div class="">
 		  <div class="row">		
 		  	<div class="asd">

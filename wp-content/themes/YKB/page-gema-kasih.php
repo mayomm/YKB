@@ -4,10 +4,10 @@ Template Name: Page Gema Kasih Indonesia
 */
 get_header(); ?>
 <div class="margin-information">
+	<div class="image-tv ">
+      	<img src="<?php bloginfo('template_url');?>/images/program tv/gema.png">
+    </div>
 	<div id="content" class="content-area col-sm-12 col-md-12 ">
-		<div class="image-gema">
-      	
-      </div>
 		<div class="">
 		  <div class="row">		
 		  	<div class="asd">
@@ -32,7 +32,7 @@ get_header(); ?>
 				  	</div>
 				</div>
 			</div>
-			<div class="col-md-9 main content-devotion-background ">
+			<div class="col-md-9 main">
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<div class="devotion-content">
 					<div class="row">

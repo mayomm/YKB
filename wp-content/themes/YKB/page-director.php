@@ -5,10 +5,10 @@ Template Name: Page Director
 get_header(); ?>
 		
 		<div class="margin-information">
+			<div class="image-tentang">
+			      	<img src="<?php bloginfo('template_url');?>/images/tentang kami/latar-belakang.png">
+			    </div>
 			<div id="content" class="content-area col-sm-12 col-md-12 ">
-				<div id="img-content-top" class="img-devtion-top img-devotion-content-top">
-					<img src="<?php bloginfo('template_url'); ?>/images/devotion/Renungan Keluarga.jpg">
-				</div>
 				<div class="latarbelakang-title">
 					<h2 class="">LATAR BELAKANG KAMI</h2>
 				</div>
@@ -60,7 +60,7 @@ get_header(); ?>
 								<div class="col-sm-7 col-md-5 main-right-blue">
 									<div class="align-center">
 										<div class="img-circle-top ">
-											<img src="<?php bloginfo('template_url');?>/images/jesus.png" >
+											<img src="<?php bloginfo('template_url');?>/images/home/ykb.gif" >
 										</div>
 										<div class="font-circle-top">
 										<p class="font-ukuran-4">Logo Yayasan Komunikasi Bersama berupaya gambar Burung Merpati dan Tiga Api dalam lingkaran.

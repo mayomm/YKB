@@ -857,7 +857,7 @@ input[type="password"], input[type="text"], input[type="search"] {
 /*footer end*/
 
 .headergambar{
-	background-image: url(http://localhost/YKB/wp-content/themes/YKB/images/header/bg.png);
+	background-image: url(http://localhost/YKB/wp-content/themes/YKB/images/header/header1.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -865,12 +865,21 @@ input[type="password"], input[type="text"], input[type="search"] {
 	margin-top:10px;
 }
 .headerlogin {
-	color:black;
-    margin-right: 20px;
+	color:#C5EBFF;
+	padding-top: 3px;
 	font-size:14px;
+}
+.headersosmed-home{
+	margin-right: -10px;
 }
 .footersos {
     margin-top: 10px;
+}
+.small-search{
+	height: 30px;
+}
+.home-top{
+	margin-top: -25px;
 }
 .font-wrap {
 	margin-top:15px;
@@ -976,6 +985,132 @@ input[type="password"], input[type="text"], input[type="search"] {
 .border-red{
 	border: 5px solid #FF0000;
 }
+.border-blue{
+    border: 2px solid #0178A3;
+    border-radius: 50%;
+    width: 270px;
+    margin-top: -0.4em;
+    margin-left: 0.7em;
+}
+.border-image{
+    border: 7px solid #C3D5DC;
+    border-radius: 50%;
+    width: 310px;
+    height: 310px;
+    margin-top: -0.5em;
+    margin-left: -0.46em;
+}
+.border-image-bulat-1{
+    border-radius: 50%;
+    border: 18px solid #F6FAFB;
+    width: 330px;
+    height: 330px;
+}
+.border-image-bulat-2{
+    
+}
+.image-bulat-1{
+    margin-top: 1.2em;
+    margin-left: 0.05em;
+}
+.image-logo-misi{
+	margin-top: 13px;
+}
+.border-misi-1{
+  display: absolute;
+}
+@media (min-width: 980px) {
+  .border-misi-1 {
+	margin-left: -9.9em;
+  }
+}
+
+.border-misi-2{
+  display: absolute;
+}
+@media (min-width: 980px) {
+  .border-misi-2 {
+	margin-left: -6em;
+  }
+}
+
+.border-misi-3{
+  display: absolute;
+}
+@media (min-width: 980px) {
+  .border-misi-3{
+ 	margin-left: -3.5em;
+  }
+}
+
+.border-misi-4{
+  display: absolute;
+}
+@media (min-width: 980px) {
+  .border-misi-4{
+ 	margin-left: -2em;
+  }
+}
+
+.border-misi-5{
+  display: absolute;
+}
+@media (min-width: 980px) {
+  .border-misi-5{
+ 	 margin-left: -3.5em;
+  }
+}
+
+.border-misi-6{
+  display: absolute;
+}
+@media (min-width: 980px) {
+  .border-misi-6{
+ 	  margin-left: -6em;
+  }
+}
+
+.border-misi-7{
+  display: absolute;
+}
+@media (min-width: 980px) {
+  .border-misi-7{
+ 	 margin-left: -9.9em;
+  }
+}
+
+.border-image-bulat-2{
+  display: absolute;
+}
+@media (min-width: 980px) {
+  .border-image-bulat-2{
+ 	 margin-top: 12em;
+  }
+}
+
+.border-misi-1 img{
+	    width: 65px;
+	    height: 65px;
+}.border-misi-2 img{
+	    width: 65px;
+	    height: 65px;
+}.border-misi-3 img{
+	    width: 65px;
+	    height: 65px;
+}.border-misi-4 img{
+	    width: 65px;
+	    height: 65px;
+}.border-misi-5 img{
+	    width: 65px;
+	    height: 65px;
+}.border-misi-6 img{
+	    width: 65px;
+	    height: 65px;
+}.border-misi-7 img{
+	    width: 65px;
+	    height: 65px;
+}
+
 .font-ukuran-1:first-letter {
 text-transform: uppercase;
 display:block;
@@ -1033,7 +1168,7 @@ margin-left: 20px;
     margin-top: 30px;
     margin-left: 15px;
     margin-bottom: 40px;
-    border-top: 1px solid black;
+    border-top: 1px solid #F4F4F4;
 }
 .latarbelakang-title{
 	margin-top: -39px;
@@ -1191,18 +1326,17 @@ margin-left: 20px;
     Ribbon colors 
 */
 .ribbondate.red {
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cedce7+0,596a72+100;Grey+3D+%231 */
-background: rgb(206,220,231); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(206,220,231,1) 0%, rgba(89,106,114,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(206,220,231,1)), color-stop(100%,rgba(89,106,114,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=0 ); /* IE6-9 */
+    background: rgb(206,220,231);
+    background: -moz-linear-gradient(top, rgba(206,220,231,1) 0%, rgba(89,106,114,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(206,220,231,1)), color-stop(100%,rgba(89,106,114,1)));
+    background: -webkit-linear-gradient(top, rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%);
+    background: -o-linear-gradient(top, rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%);
+    background: -ms-linear-gradient(top, rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%);
+    background: linear-gradient(to bottom, rgb(243, 243, 243) 0%,rgb(216, 217, 218) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=0 );
 }
 .ribbondate.red:after {
-  border-color: rgba(206,220,231,1) rgba(89,106,114,1) transparent rgba(89,106,114,1);
+    border-color: rgba(206,220,231,1) rgb(218, 218, 218) transparent rgb(218, 218, 218);
 }
 .margin-devotion-top{
 	margin-top: -25px;
@@ -1382,7 +1516,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', end
 .nav-sidebar > .active > a:hover,
 .nav-sidebar > .active > a:focus {
   color: #fff;
-  background-color: #808080;
+  background-color: #C3C3C3;
 }
 
 .rightbar-devotion {
@@ -1407,7 +1541,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', end
 }
 .img-devtion-top img{
 	width: 100%;
-	height: 250px;
+	height: 150px;
 }
 
 .title-devotion-main{
@@ -1616,6 +1750,15 @@ hr {
 /* event stop*/
 
 /* Home start*/
+.site-title-home {
+    color: #fff;
+    font-size: 30px;
+    padding: 5px 0px;
+}
+.site-description-home {
+    color: #fff;
+    font-size: 14px;
+}
 .devotion-top-img-home{
 	margin-left:15px;
 }
@@ -2036,14 +2179,7 @@ hr {
 	text-align: center;
 
 }
-.image-lentera{
-	background :url('http://localhost/YKB/wp-content/themes/YKB/images/program tv/lentera.jpg');
-	background-size: 100% 150%;
-	max-height:300px; 
-	height: 300px;
-	background-repeat: no-repeat;
-	background-position: center;
-}
+
 .top-title-lentera{
 	font-size: 40px;
 	margin-left: 70px;
@@ -2054,14 +2190,7 @@ hr {
 	margin-top: 130px;
 	margin-right: 80px;
 }
-.image-sabi{
-	background :url('http://localhost/YKB/wp-content/themes/YKB/images/program tv/hand.jpg');
-	background-size: 100% 150%;
-	max-height:300px; 
-	height: 300px;
-	background-repeat: no-repeat;
-	background-position: center;
-}
+
 .top-title-sabi{
 	font-size: 40px;
 }
@@ -2071,13 +2200,13 @@ hr {
 	margin-top: 50px;
 	margin-right: 80px;
 }
-.image-gema{
-	background :url('http://localhost/YKB/wp-content/themes/YKB/images/program tv/gema.gif');
-	background-size: 110% 100%;
-	max-height:300px; 
+.image-tv img{
+	width: 100%;
+	height: 250px;
+}
+.image-tentang img{
+	width: 100%;
 	height: 300px;
-	background-repeat: no-repeat;
-	background-position: center;
 }
 
 /* video stop*/
@@ -2089,6 +2218,7 @@ hr {
 }
 .background-white{
 	background-color: white;
+	margin-bottom: -50px;
 }
 .buttom-home{
 	margin-top:20px;
@@ -2118,7 +2248,6 @@ hr {
 	border-top: 1px solid #aaa;
 }
 
-
 .margin-rebbon{
 	margin-left: -15px;
 }
@@ -2128,7 +2257,10 @@ hr {
     height: 225px;
 	box-shadow: -5px 10px 30px #888888, 9px 10px 30px #888888;
 }
-
+.back-event img{
+	width: 100px;
+	height:30px;
+}
 
 /*rebbon event start*/
 .ribbonhome {
@@ -2410,7 +2542,7 @@ hr {
     margin-left: 45px;
 }
 .margin-bottom-teduh{
-	margin-bottom: 50px;
+	margin-bottom: 100px;
 }
 .margin-close-teduh{
 	    margin-bottom: -68px;
@@ -2752,7 +2884,7 @@ hr {
 }
 
 .carousel-radio-control.right {
-  right: -70px;
+  right: -45px;
   top: 80px;
   left: auto;
   background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.5)));
@@ -2908,3 +3040,20 @@ hr {
 }
 /* radio stop*/
 
+.siteinfo-footer {
+	background: #ffffff;
+	background-image: url(http://localhost/YKB/wp-content/themes/YKB/images/footer/footer.png);
+	padding: 20px 0;
+	text-align: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.footer a, .siteinfo-footer a {
+    color: black;
+}
+
+.siteinfo-footer p, .footer td, .footer th {
+	font-size: 13px;
+	color: black;
+}

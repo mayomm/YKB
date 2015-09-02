@@ -4,9 +4,9 @@ Template Name: Page Rencana Agung
 */
 get_header(); ?>
 <div class="margin-information">
-<div id="img-content-top" class="img-devtion-top">
-			<img src="<?php bloginfo('template_url'); ?>/images/information/gruposp.jpg">
-		</div>
+<div class="image-tv">
+      	<img src="<?php bloginfo('template_url');?>/images/radio/rencana.png">
+    </div>
 	<div id="content" class="content-area col-sm-12 col-md-12 ">
 		<div class="">
 		  <div class="row">		
@@ -25,13 +25,13 @@ get_header(); ?>
 							<div class="margin-devotion-sidebar">
 								<div class="sidebar-radio">
 								  <ul class="nav nav-sidebar-radio">
-									<li class=""><a href="#" class="sidebar-title"><span class="sidebar-title">KATA-KATA WASIAT</span></a></li>
-									<li class="lastchild-sidebar-radio"><a href="#" class=""><span class="sidebar-title">KATA HARI INI</span></a></li>
-									<li class="lastchild-sidebar-radio"><a href="#" class=""><span class="sidebar-title">PEDOMAN HIDUP</span></a></li>
-									<li class="lastchild-sidebar-radio"><a href="#" class=""> <span class="sidebar-title">RENCANA AGUNG</span> </a></li>
-									<li class="lastchild-sidebar-radio"><a href="#" class=""> <span class="sidebar-title">PELANGI KASIH</span> </a></li>
-									<li class="lastchild-sidebar-radio"><a href="#" class=""> <span class="sidebar-title">SERIBU SATU MAKNA </span><span class="sidebar-title">PENGALAMAN HIDUP</span> </a></li>
-									<li class="lastchild-sidebar-radio"><a href="#" class=""> <span class="sidebar-title">RUMAH PELANGI</span> </a></li>
+									<li class=""><a href="<?php get_site_url();?>kata-kata-wasiat" class="sidebar-title"><span class="sidebar-title">KATA-KATA WASIAT</span></a></li>
+									<li class="lastchild-sidebar-radio"><a href="<?php get_site_url();?>kata-hari-ini" class=""><span class="sidebar-title">KATA HARI INI</span></a></li>
+									<li class="lastchild-sidebar-radio"><a href="<?php get_site_url();?>pedoman-hidup" class=""><span class="sidebar-title">PEDOMAN HIDUP</span></a></li>
+									<li class="lastchild-sidebar-radio"><a href="<?php get_site_url();?>rencana-agung" class=""> <span class="sidebar-title">RENCANA AGUNG</span> </a></li>
+									<li class="lastchild-sidebar-radio"><a href="<?php get_site_url();?>pelangi-kasih" class=""> <span class="sidebar-title">PELANGI KASIH</span> </a></li>
+									<li class="lastchild-sidebar-radio"><a href="<?php get_site_url();?>seribu-satu-makna-pengalaman-hidup" class=""> <span class="sidebar-title">SERIBU SATU MAKNA </span><span class="sidebar-title">PENGALAMAN HIDUP</span> </a></li>
+									<li class="lastchild-sidebar-radio"><a href="<?php get_site_url();?>rumah-pelangi" class=""> <span class="sidebar-title">RUMAH PELANGI</span> </a></li>
 								  </ul>
 								 </div>
 							</div>
@@ -42,7 +42,8 @@ get_header(); ?>
 							<div class="contact-sidebar">
 								<div class="row">
 									<div class="margin-contact">
-									<div class="col-md-10">
+										<div class="row">
+									<div class="col-md-10 background-contact-radio">
 										<div class="section">
 										<div class="logo-contact">
 											<img src="<?php bloginfo(template_url);?>/images/radio/contact.gif">
@@ -59,6 +60,7 @@ get_header(); ?>
 												</address>
 											</div>
 										</div>
+									</div>
 									</div>
 									</div>
 								</div>

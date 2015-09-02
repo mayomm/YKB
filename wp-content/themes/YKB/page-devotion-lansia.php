@@ -10,7 +10,7 @@ get_header(); ?>
 	$_SESSION["devotionname"]="Renungan Lansia";
 ?>
 		<div id="img-content-top" class="img-devtion-top img-devotion-content-top">
-			<img src="<?php bloginfo('template_url'); ?>/images/devotion/Renungan Lansia.jpg">
+			<img src="<?php bloginfo('template_url'); ?>/images/devotion/Renungan Lansia.png">
 		</div>
 		<div class="container">
 		  <div class="row">		
@@ -26,11 +26,11 @@ get_header(); ?>
 					<div class="margin-devotion-sidebar">
 					<div class="sidebar">
 					  <ul class="nav nav-sidebar">
-						<li class="sidebar-background"><a href="#"> WASIAT </a></li>
-						<li class="sidebar-background"><a href="#"> KIDDY </a></li>
-						<li class="sidebar-background"><a href="#"> TEEN FOR CHRIST </a></li>
-						<li class="sidebar-background"><a href="#"> YOUTH FOR CHRIST </a></li>
-						<li class="sidebar-background"><a href="#"> JENDELA HATI </a></li>
+						<li class="sidebar-background"><a href="<?php get_site_url();?>wasiat"> WASIAT </a></li>
+						<li class="sidebar-background"><a href="<?php get_site_url();?>kiddy"> KIDDY </a></li>
+						<li class="sidebar-background"><a href="<?php get_site_url();?>teen-for-christ"> TEEN FOR CHRIST </a></li>
+						<li class="sidebar-background"><a href="<?php get_site_url();?>youth-for-christ"> YOUTH FOR CHRIST </a></li>
+						<li class="sidebar-background"><a href="<?php get_site_url();?>jendela-hati"> JENDELA HATI </a></li>
 					  </ul>
 					 </div>
 					</div>

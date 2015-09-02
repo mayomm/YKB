@@ -4,10 +4,10 @@ Template Name: Page Even News
 */
 get_header(); ?>
 <div class="margin-information">
+<div class="image-tv">
+      	<img src="<?php bloginfo('template_url');?>/images/information/kegiatan.png">
+    </div>
 	<div id="content" class="content-area col-sm-12 col-md-12 ">
-		<div id="img-content-top" class="img-devtion-top img-devotion-content-top">
-			<img src="<?php bloginfo('template_url'); ?>/images/information/gruposp.jpg">
-		</div>
 		<div class="">
 		  <div class="row">		
 		  	<div class="asd">
