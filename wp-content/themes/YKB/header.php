@@ -34,12 +34,14 @@
 					<div class="col-md-4  headersos">
 						<div class="col-sm-offset-3 ">
 							<div class="row">
+							<form action="<?php get_site_url()?>" role="search" method="get" class="search-form">
 								<div class="input-group input-sm headersos ">
 									<input type="search" value="" name="s" class="search-field form-control input-sm small-search" placeholder="Search...">
 									<div class="input-group-btn">
-									  <button type="submit" class="btn input-sm small-search"><div class="glyphicon glyphicon-search"></div></button>
+									  	<button type="submit" class="btn input-sm small-search"><div class="glyphicon glyphicon-search"></div></button>
 									</div>
 								</div>
+								</form>
 								<div class="text-right" id="headersite-title">
 									<div class="col-md-12">
 										<div class="row">

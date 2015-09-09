@@ -3091,9 +3091,9 @@ input[type="button"].btn-block {
 }
 .dropdown-menu>li>a:hover,
 .dropdown-menu>li>a:focus {
-    color: #fff;
+    color: #FFFFFF;
     text-decoration: none;
-    background-color: #428bca
+    background-color: #428bca;
 }
 .dropdown-menu>.active>a,
 .dropdown-menu>.active>a:hover,
@@ -3831,7 +3831,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     min-height: 40px;
     margin-bottom: 24px;
     /*border: 1px solid transparent;*/
-    height:40px;
+   /* height:40px;*/
 }
 .navbar:before,
 .navbar:after {

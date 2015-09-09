@@ -11,9 +11,9 @@
 				<div class="col-md-3 col-md-offset-1">
 					<address class="text-left font-footer">
 						<h4>TENTANG KAMI</h4><br>
-						<small>Latar Belakang & Susunan Pengurus</small><br>
-						<small>Visi & Misi Kami</small><br>
-						<small>Mitra</small><br>
+						<small><a href="<?php get_site_url();?>latar-belakang">Latar Belakang & Susunan Pengurus</a></small><br>
+						<small><a href="<?php get_site_url();?>visi-misi">Visi & Misi Kami</a></small><br>
+						<small><a href="<?php get_site_url();?>mitra">Mitra</a></small><br>
 					</address>
 					<br>
 					<br>
@@ -33,7 +33,7 @@
 					<address class="text-left font-footer">
 						<h4>HUBUNGI KAMI</h4><br>
 						<small>Telepon:</small><br>
-						<small>+62 21 583 03398/+62 21 583 03498</small><br>
+						<small><a href="tel:+622158303398">+62 21 583 03398</a>/<a href="tel:+622158303498">+62 21 583 03498</a></small><br>
 						<br>
 						<small>Fax:</small><br>
 						<small>+62 21 583 04664</small><br>

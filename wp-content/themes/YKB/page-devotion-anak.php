@@ -40,14 +40,10 @@ get_header(); ?>
 			<?php
 					$today = getdate();
 					$args = array(
-						'date_query' => array(
-							array(
-								'year'  => $today['year'],
-								'month' => $today['mon'],
-								'day'   => $today['mday'],
-							),
-						),
 						'cat' => '13',
+						'orderby' => 'p',
+						'order'   => 'DESC',
+						'posts_per_page'      => 1,
 					);
 				// The Query
 				query_posts( $args );

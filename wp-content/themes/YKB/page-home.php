@@ -556,14 +556,10 @@ get_header(); ?>
 								<?php
 										$today = getdate();
 										$args = array(
-											'date_query' => array(
-												array(
-													'year'  => $today['year'],
-													'month' => $today['mon'],
-													'day'   => $today['mday'],
-												),
-											),
+											'posts_per_page'=>1,
 											'cat' => '8',
+											'orderby'=>'p',
+											'order'=>'DESC',
 										);
 									// The Query
 									query_posts( $args );
@@ -599,8 +595,9 @@ get_header(); ?>
 															<div class="date-home">
 																<?php the_time('F jS, Y');?>
 															</div>
-															<div>
+															<div  class="hide-img">
 																<?php the_excerpt(); ?>
+																<div class="buttom-excerpt"><a class="more-link excerpt-link" href="<?php echo get_permalink( get_the_ID() );?>"> READ MORE</a></div>
 															</div>
 														</div>
 													</div>
@@ -631,14 +628,10 @@ get_header(); ?>
 														<?php
 																$today = getdate();
 																$args = array(
-																	'date_query' => array(
-																		array(
-																			'year'  => $today['year'],
-																			'month' => $today['mon'],
-																			'day'   => $today['mday'],
-																		),
-																	),
+																	'posts_per_page'=>1,
 																	'cat' => '13',
+																	'orderby'=>'p',
+																	'order'=>'DESC',
 																);
 															// The Query
 															query_posts( $args );
@@ -679,8 +672,9 @@ get_header(); ?>
 																		<div class="date-home">
 																			<?php the_time('F jS, Y');?>
 																		</div>
-																		<div>
+																		<div  class="hide-img">
 																			<?php the_excerpt(); ?>
+																			<div class="buttom-excerpt"><a class="more-link excerpt-link" href="<?php echo get_permalink( get_the_ID() );?>"> READ MORE</a></div>
 																		</div>
 																		</div>
 																	</div>
@@ -705,14 +699,10 @@ get_header(); ?>
 														<?php
 																$today = getdate();
 																$args = array(
-																	'date_query' => array(
-																		array(
-																			'year'  => $today['year'],
-																			'month' => $today['mon'],
-																			'day'   => $today['mday'],
-																		),
-																	),
+																	'posts_per_page'=>1,
 																	'cat' => '12',
+																	'orderby'=>'p',
+																	'order'=>'DESC',
 																);
 															// The Query
 															query_posts( $args );
@@ -753,9 +743,9 @@ get_header(); ?>
 																		<div class="date-home">
 																			<?php the_time('F jS, Y');?>
 																		</div>
-																		<div>
-																			<?php do_shortcode($content); ?>
+																		<div  class="hide-img">
 																			<?php the_excerpt(); ?>
+																			<div class="buttom-excerpt"><a class="more-link excerpt-link" href="<?php echo get_permalink( get_the_ID() );?>"> READ MORE</a></div>
 																		</div>
 																		</div>
 																	</div>
@@ -793,14 +783,10 @@ get_header(); ?>
 														<?php
 																$today = getdate();
 																$args = array(
-																	'date_query' => array(
-																		array(
-																			'year'  => $today['year'],
-																			'month' => $today['mon'],
-																			'day'   => $today['mday'],
-																		),
-																	),
+																	'posts_per_page'=>1,
 																	'cat' => '14',
+																	'orderby'=>'p',
+																	'order'=>'DESC',
 																);
 															// The Query
 															query_posts( $args );
@@ -841,8 +827,9 @@ get_header(); ?>
 																		<div class="date-home">
 																			<?php the_time('F jS, Y');?>
 																		</div>
-																		<div>
+																		<div  class="hide-img">
 																			<?php the_excerpt(); ?>
+																			<div class="buttom-excerpt"><a class="more-link excerpt-link" href="<?php echo get_permalink( get_the_ID() );?>"> READ MORE</a></div>
 																		</div>
 																		</div>
 																	</div>
@@ -867,14 +854,10 @@ get_header(); ?>
 														<?php
 																$today = getdate();
 																$args = array(
-																	'date_query' => array(
-																		array(
-																			'year'  => $today['year'],
-																			'month' => $today['mon'],
-																			'day'   => $today['mday'],
-																		),
-																	),
+																	'posts_per_page'=>1,
 																	'cat' => '16',
+																	'orderby'=>'p',
+																	'order'=>'DESC',
 																);
 															// The Query
 															query_posts( $args );
@@ -915,8 +898,9 @@ get_header(); ?>
 																		<div class="date-home">
 																			<?php the_time('F jS, Y');?>
 																		</div>
-																		<div>
+																		<div class="hide-img">
 																			<?php the_excerpt(); ?>
+																			<div class="buttom-excerpt"><a class="more-link excerpt-link" href="<?php echo get_permalink( get_the_ID() );?>"> READ MORE</a></div>
 																		</div>
 																		</div>
 																	</div>

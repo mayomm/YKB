@@ -40,14 +40,10 @@ get_header(); ?>
 			<?php
 					$today = getdate();
 					$args = array(
-						'date_query' => array(
-							array(
-								'year'  => $today['year'],
-								'month' => $today['mon'],
-								'day'   => $today['mday'],
-							),
-						),
+						'posts_per_page'=> 1,						
 						'cat' => '8',
+						'orderby'=>'p',
+						'order'=>'DESC',
 					);
 				// The Query
 				query_posts( $args );
@@ -74,7 +70,9 @@ get_header(); ?>
 								</div>
 							</div>
 						</div>
-					<?php the_content(); ?>
+						<div class="content-devotion">
+							<?php the_content(); ?>
+						</div>
 					</div>
 				</div>
 				<?php endwhile; ?>

@@ -54,8 +54,8 @@ get_header(); ?>
 												<address>
 													Jika ingin bertanya dan berdiskusi mengenai topik yang dibincarakan, dapat mengirimkan sms ke:</br>
 													<div class="section">
-														<div class="glyphicon glyphicon-envelope"></div> <span>+6281319397455</span></a> </br>
-														<div class="glyphicon glyphicon-envelope"></div> <span>+6285798797123</span></a> </br>
+														<div class="glyphicon glyphicon-envelope"></div> <span><a href="sms:+6281319397455">+6281319397455</a></span></a> </br>
+														<div class="glyphicon glyphicon-envelope"></div> <span><a href="sms:+6285798797123">+6285798797123</a></span></a> </br>
 													</div>
 												</address>
 											</div>
